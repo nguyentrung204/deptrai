@@ -1,0 +1,145 @@
+
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+	background:  #f4f4f4;
+	font-family: 'Arimo', serif;
+	font-size: 15px;
+	height: 100%;
+	    margin: 0;
+    padding: 0;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+a:hover , a:active{
+	text-decoration:none;
+}
+
+.cursor {
+	cursor:pointer;
+}
+
+.clear-fix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.hide {
+	display: none;
+}
+
+.note-editor {
+	border-color: #ccc !important;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.error {
+	color: red;
+}
+
+.navbar-project1 {
+    width: 100%;
+    position: fixed;
+    z-index: 120;
+    border: 0;
+    top: 0;
+    background: #fff;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -khtml-border-radius: 0;
+    border-radius: 0;
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,.5);
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+	border-bottom: 2px solid #44759e;
+}
+
+#logo {
+
+width: 165px;
+    margin-top: -12px;
+
+}
+
+.footer {
+
+    width: 100%;
+	padding: 50px 0;
+    background-color: #222;
+	color: #b5b1b1;
+	
+	clear: both;
+    position: relative;
+    z-index: 10;
+}
+
+#content {
+   background: #fff;
+  
+
+  
+	height: 100%;
+
+	
+
+	 
+	 box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 0 1px 5px rgba(0, 0, 0, 0.15), 0 1px 5px rgba(0, 0, 0, 0.15);
+	
+}
+
+#khachhang {
+	background: #eee;
+	    text-align: center;
+}
+.box-title {
+    padding: 50px 0 35px;
+	text-align:center;
+}
+.box-list-industry .list-industry {
+    margin-bottom: 20px;
+	    width: 20%;
+}
+
+
+.box-list-industry .list-industry .list-customer .img-customer {
+    background-color: #f7f7f7;
+}
+
+.list-customer .img-customer {
+    border: 1px solid #c9c9c9;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+    display: block;
+    color: #111;
+    height: 145px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.box-list-industry .list-industry .list-customer .img-customer img {
+    margin-top: 20px;
+}
+
+@media (max-width: 767px)
+.box-list-industry .list-industry {
+    width: 50% !important;
+}
+
+
+
+

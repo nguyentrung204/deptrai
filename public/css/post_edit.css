@@ -1,0 +1,18 @@
+.control-form {
+	margin-bottom: 20px;
+}
+
+.type1, .type2, .type3, .note-editor {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+
+.dropcap {
+	float: left;
+	padding: 0px;
+	font-size: 92.2388059701493px;
+	line-height: 0px;
+	margin-top: 7.82px;
+	height: 61.8px;
+}

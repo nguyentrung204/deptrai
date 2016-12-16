@@ -53,7 +53,8 @@ a:hover , a:active{
 
 .navbar-project1 {
     width: 100%;
-    position: fixed;
+    position: relative;
+    margin-bottom: 0;
     z-index: 120;
     border: 0;
     top: 0;

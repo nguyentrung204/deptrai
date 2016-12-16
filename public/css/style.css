@@ -135,11 +135,40 @@ width: 165px;
     margin-top: 20px;
 }
 
-@media (max-width: 767px)
-.box-list-industry .list-industry {
-    width: 50% !important;
+@media (max-width: 767px) {
+    .box-list-industry .list-industry {
+        width: 50% !important;
+    }
 }
 
+.btn {
+    padding: 0 50px;
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 44px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #a1a1a1;
+    color: #a1a1a1;
+    overflow: visible;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    font-family: font-helveticaNeueBold;
+}
 
+.btn:hover {
+    background-color: #44759e;
+    border: 1px solid #44759e;
+    color: #fff;
+}
 
+#khachhang .btn {
+    margin: 15px 0 50px;
+}
 

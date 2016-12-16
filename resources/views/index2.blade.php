@@ -78,7 +78,7 @@ $(function () {
                     </div>
                 </div>
             </div>
-	
+         <a href="/deptrai/khachhang" class="btn">Xem thêm</a>
   </div>
 
 @stop

@@ -98,4 +98,7 @@ Route::get('post/search', 'PostController@get');
 	Session::set('applocale', $locale);
 	return redirect(url(URL::previous()));
  });
- 
+
+Route::get('/khachhang', function() {
+    return View::make('khachhang');
+});

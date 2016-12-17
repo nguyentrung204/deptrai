@@ -11,7 +11,7 @@
 
 @stop
 
-<header class="site-header size-lg text-center" style="padding: 220px;;background-image: url({{ URL::asset('public/img/Anh-tap-the.png') }})">
+<header class="site-header size-lg text-center" style="padding: 220px;background-position: center;background-image: url({{ URL::asset('public/img/Anh-tap-the.png') }})">
 
 </header>
 

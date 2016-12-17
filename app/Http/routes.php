@@ -107,6 +107,9 @@ Route::get('/tuyendung', function() {
     return View::make('tuyendung');
 });
 
+Route::get('/hinhanh', function() {
+    return View::make('hinhanh');
+});
 Route::get('/lienhe', function() {
     return View::make('lienhe');
 });

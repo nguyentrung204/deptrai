@@ -16,15 +16,18 @@
 		<script src="{{ URL::asset('public/jquery/jquery-1.11.3.min.js') }}"></script>
 		<script src="{{ URL::asset('public/bootstrap/js/bootstrap.min.js') }}"></script>
 		<script src="{{ URL::asset('public/js/script.js') }}"></script>
-		 <style>
-       #map {
-        height: 200px;
-        width: 200px;
-       }
-    </style>
-		
-	
-		
+		<script>
+			$( document ).ready(function() {
+				$('.navbar-nav li a').click(function(e) {
+					$('.navbar-nav li a').removeClass('active');
+					var $this = $(this);
+					if (!$this.hasClass('active')) {
+						$this.addClass('active');
+					}
+					e.preventDefault();
+				});
+			});
+		</script>
 		@yield('js')
 
 	</head>
@@ -45,7 +48,7 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse main-menu navbar-collapse navbar-right navbar-bt" id="bs-example-navbar-collapse-1">
 		  <ul class="nav navbar-nav">
-			<li class="active"><a href="#">TRANG CHỦ<span class="sr-only">(current)</span></a></li>
+			<li	><a href="#">TRANG CHỦ<span class="sr-only">(current)</span></a></li>
 			<li><a href="#">GIỚI THIỆU</a></li>
 			<li><a href="#">DỊCH VỤ</a></li>
 			<li><a href="#">KHÁCH HÀNG</a></li>

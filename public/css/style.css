@@ -365,13 +365,13 @@ a:hover , a:active{
 }
 
 #map {
-    height: 300px !important;
+    height: 400px !important;
     width: 100% !important;
 }
 
 #contact {
-    background-color: #1ABC9C;
-    color: #fff;
+    background-color: #4475a0;
+    color: #e0e0e0;
     padding-bottom: 20px;
 }
 
@@ -413,7 +413,7 @@ a:hover , a:active{
 
 #social-google-plus {
     border: 2px solid white;
-    padding: 12px 14px;
+    padding: 12px 10px;
     border-radius: 12px;
 }
 
@@ -431,7 +431,78 @@ a:hover , a:active{
 }
 
 #sendBtn .btn:hover {
-    color: #1ABC9C;
+    color: #4475a0;
     text-decoration: none;
-    background: white;
+    background: #e0e0e0;
+}
+
+#contact h3, #contact label{
+    color: #fff;
+}
+
+#bs-example-navbar-collapse-1 a.active{
+    background-color: #4475a0;
+    color: #ffffff;
+}
+
+#about {
+    background: #eaeaea;
+    box-shadow: -1px 3px 5px #888888, 1px 3px 5px #888888;
+    min-height: 100%;
+}
+
+#about div {
+    text-align: center;
+}
+
+#about_title div:after{
+    background-color: #4475a0;
+    bottom: 0;
+    content: "";
+    display: block;
+    min-height: 1px;
+    left: 50%;
+    width: 80px;
+    margin: auto;
+    height: 3px;
+}
+
+#about_quote {
+    font-size: 28px;
+}
+
+#about_quote p {
+    width: 70%;
+    margin: auto;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#about_detail {
+    padding: 20px 40px;
+}
+
+#about_detail div {
+    padding: 0 40px;
+}
+.detail-label-1 {
+    text-align: left !important;
+    color: #4475a0;
+}
+.detail-param {
+    text-align: justify !important;
+    font-family: 'Cabin Condensed';
+}
+
+.detail-label-2 {
+    text-align: left !important;
+    margin-top: 20px;
+
+}
+
+.detail-label-2 h4 {
+    font-size: 30px;
+}
+
+.detail-label-1 h3{
+    font-size: 36px;
 }

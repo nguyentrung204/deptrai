@@ -110,3 +110,7 @@ Route::get('/tuyendung', function() {
 Route::get('/lienhe', function() {
     return View::make('lienhe');
 });
+
+Route::get('/gioithieu', function() {
+    return View::make('gioithieu');
+});

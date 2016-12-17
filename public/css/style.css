@@ -135,34 +135,74 @@ width: 165px;
     }
 }
 
-.btn {
-    padding: 0 50px;
-    display: inline-block;
-    margin-bottom: 0;
-    font-size: 18px;
-    line-height: 44px;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    cursor: pointer;
-    background-color: #fff;
-    border: 1px solid #a1a1a1;
-    color: #a1a1a1;
-    overflow: visible;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    font-family: font-helveticaNeueBold;
+#map {
+    height: 300px !important;
+    width: 100% !important;
 }
 
-.btn:hover {
-    background-color: #44759e;
-    border: 1px solid #44759e;
+#contact {
+    background-color: #1ABC9C;
     color: #fff;
+    padding-bottom: 20px;
 }
 
-#khachhang .btn {
-    margin: 15px 0 50px;
+#contactInfo {
+    padding-left: 75px;
 }
 
+.w-socials-item {
+    margin: 0 4px 4px 0;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.w-socials.size_big .w-socials-item-link {
+    font-size: 28px;
+    line-height: 60px;
+    height: 60px;
+    width: 60px;
+}
+
+.w-socials.size_big .w-socials-item-link i {
+    font-size: 30px;
+    line-height: 54px;
+    color: white;
+}
+
+#social-facebook {
+    border: 2px solid white;
+    padding: 12px 20px;
+    border-radius: 12px;
+}
+
+#social-twitter {
+    border: 2px solid white;
+    padding: 12px 14px;
+    border-radius: 12px;
+}
+
+#social-google-plus {
+    border: 2px solid white;
+    padding: 12px 14px;
+    border-radius: 12px;
+}
+
+#sendBtn {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#sendBtn .btn {
+    padding: 5px 41px;
+    font-size: 20px;
+    background: transparent;
+    border: 2px solid;
+    border-radius: 12px;
+}
+
+#sendBtn .btn:hover {
+    color: #1ABC9C;
+    text-decoration: none;
+    background: white;
+}

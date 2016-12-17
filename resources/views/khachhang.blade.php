@@ -10,19 +10,27 @@
 
 @stop
 
-<div class="list-group">
-    <a href="#" class="list-group-item">
-        <h4 class="list-group-item-heading">First List Group Item Heading</h4>
-        <p class="list-group-item-text">List Group Item Text</p>
-    </a>
-    <a href="#" class="list-group-item">
-        <h4 class="list-group-item-heading">Second List Group Item Heading</h4>
-        <p class="list-group-item-text">List Group Item Text</p>
-    </a>
-    <a href="#" class="list-group-item">
-        <h4 class="list-group-item-heading">Third List Group Item Heading</h4>
-        <p class="list-group-item-text">List Group Item Text</p>
-    </a>
+<div class="row" id="company" style="margin-top: 20px">
+    <div class="col-lg-6">
+        <div class="item-company ">
+            <div class="item-image col-lg-3">
+                <img src="{{ URL::asset('/public/img/female_icon.png') }}" width="100px" height="100px" alt="Aothun.vn">
+            </div>
+            <div class="item-info col-lg-9">
+                <div>
+                    <label>Nguyễn Văn A</label>
+                    <span>nhận xét: </span>
+                </div>
+                <div>
+                    <span>Ngày 17 tháng 12 năm 2016, 09:30</span>
+                </div>
+                <div>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed lectus id eros pharetra euismod sit amet ut ipsum.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 @stop

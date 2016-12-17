@@ -22,7 +22,7 @@ $(function () {
 
 <div style="padding: 2px 3px;">
   <video width="100%" controls>
-	  <source src="http://zmp3-mp3-mv1.zmp3-bdhcm-1.za.zdn.vn/7fe2d4ebe8ae01f058bf/9031098867185938379?key=O6eftfAV6BFUOXlcq3Zn3Q&expires=1481828672" type="video/mp4">
+	  <source src="{{ URL::asset('/public/video/videohome.mp4')}}" type="video/mp4">
 	  
 	Your browser does not support the video tag.
 	</video>

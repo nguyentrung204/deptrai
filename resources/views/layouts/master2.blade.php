@@ -24,7 +24,6 @@
 					if (!$this.hasClass('active')) {
 						$this.addClass('active');
 					}
-					e.preventDefault();
 				});
 			});
 		</script>
@@ -48,13 +47,13 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse main-menu navbar-collapse navbar-right navbar-bt" id="bs-example-navbar-collapse-1">
 		  <ul class="nav navbar-nav">
-			<li><a href="#">TRANG CHỦ<span class="sr-only">(current)</span></a></li>
-			<li><a href="#">GIỚI THIỆU</a></li>
-			<li><a href="#">DỊCH VỤ</a></li>
-			<li><a href="#">KHÁCH HÀNG</a></li>
-			<li><a href="#">BÁO GIÁ</a></li>
-			<li><a href="#">TUYỂN DỤNG</a></li>
-			<li><a href="#">LIÊN HỆ</a></li>
+			  <li><a href="/deptrai">TRANG CHỦ<span class="sr-only">(current)</span></a></li>
+			  <li><a href="/deptrai/gioithieu">GIỚI THIỆU</a></li>
+			  <li><a href="/deptrai/hinhanh">DỊCH VỤ</a></li>
+			  <li><a href="/deptrai/khachhang">KHÁCH HÀNG</a></li>
+			  <li><a href="/deptrai">BÁO GIÁ</a></li>
+			  <li><a href="/deptrai/tuyendung">TUYỂN DỤNG</a></li>
+			  <li><a href="/deptrai/lienhe">LIÊN HỆ</a></li>
 		  </ul>
 		 
 		 

@@ -90,7 +90,7 @@ width: 165px;
     z-index: 10;
 }
 
-#content, #hinhanh, #khachhang {
+#content, #hinhanh, #khachhang, #about {
     background: #fff;
     min-height: 100%;
     box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 0 1px 5px rgba(0, 0, 0, 0.15), 0 1px 5px rgba(0, 0, 0, 0.15);
@@ -275,8 +275,6 @@ border: none;
 .site-header {
 	position: relative;
     background-attachment: fixed;
-    -webkit-background-size: cover;
-    background-size: cover;
     background-repeat: no-repeat;
     z-index: 0;
     color: #fff;
@@ -552,11 +550,7 @@ width: 190px;
     color: #ffffff;
 }
 
-#about {
-    background: #eaeaea;
-    box-shadow: -1px 3px 5px #888888, 1px 3px 5px #888888;
-    min-height: 100%;
-}
+
 
 #about div {
     text-align: center;
@@ -581,7 +575,6 @@ width: 190px;
 #about_quote p {
     width: 70%;
     margin: auto;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #about_detail {
@@ -591,13 +584,19 @@ width: 190px;
 #about_detail div {
     padding: 0 40px;
 }
+
+#about {
+
+font-family: 'Cabin Condensed';
+}
+
 .detail-label-1 {
     text-align: left !important;
-    color: #4475a0;
 }
 .detail-param {
     text-align: justify !important;
     font-family: 'Cabin Condensed';
+	font-size: 20px;
 }
 
 .detail-label-2 {
@@ -606,12 +605,26 @@ width: 190px;
 
 }
 
-.detail-label-2 h4 {
+.detail-label-2 h3 {
     font-size: 30px;
+	font-family: 'Cabin Condensed';
+	padding: 5px 0px;
+	padding-top: 40px;
 }
 
 .detail-label-1 h3{
     font-size: 36px;
+	font-family: 'Cabin Condensed';
+}
+
+#about {
+	padding-bottom: 150px;
+	padding-top: 50px;
+
+}
+
+.detail-param li {
+	margin: 5px 0px;
 }
 
 /* Zoom In #1 */

@@ -29,7 +29,7 @@
 	
 	<div id="khachhang" class="container fill">
 		<div class="vip clearfix">
-		<h2>Ý kiến khách hàng</h2>
+		<h2><i class="fa fa-commenting-o" aria-hidden="true"></i> &nbsp Ý kiến khách hàng </h2>
 		<div class="descript col-md-12 col-sm-12 col-xs-12 col-lg 12">Nhờ hoạt động đầu tư kiên định, phát triển đội ngũ nhân viên và các phương pháp đã được kiểm chứng trên thực tế, dẫn đến đạt được độ an toàn lao động cao và sự suất sắc trong hoạt động. Mức độ hài lòng của khách hàng luôn vượt quá sự mong đợi là đích đến cuối cùng của chúng tôi.
 
 Sau đây là một số ý kiến khách hàng sử dụng dịch vụ của chúng tôi trong nhiều năm qua và được xem là bằng chứng cho chất lượng dịch vụ của chúng tôi.</div>
@@ -158,7 +158,7 @@ Sau đây là một số ý kiến khách hàng sử dụng dịch vụ của ch
 		</ul>
 		
 		<div class="doitac">
-		<h2>Danh sách Khách Hàng & Đối Tác</h2>
+		<h2><i class="fa fa-handshake-o" aria-hidden="true"></i> &nbsp Danh sách Khách Hàng & Đối Tác</h2>
 			<ul class="row">
 				<li class="col-lg-4 col-md-12">
 					<div> <img src="{{ URL::asset('public/img/khachhang/doitac/B008.png') }}" /></div>

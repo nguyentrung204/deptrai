@@ -25,7 +25,7 @@ $(function () {
 
 
 
-<header class="site-header size-lg text-center" style="background-image: url({{ URL::asset('public/img/bg-banner1.jpg') }})">
+<header class="site-header size-lg text-center" style="background-image: url({{ URL::asset('public/img/bg-banner1.jpg') }}) ;   ">
       <div class="container">
         <div class="col-xs-12">
           <br><br>

@@ -23,7 +23,7 @@ Route::filter("checkLogin", function(){
  * Lấy thông tin người dùng 
  */
 Route::get('/', function() {
-    return View::make('index2');
+    return View::make('index2',array('menu' => 'trangchu'));
 });
 
 /**
@@ -100,20 +100,20 @@ Route::get('post/search', 'PostController@get');
  });
 
 Route::get('/khachhang', function() {
-    return View::make('khachhang');
+    return View::make('khachhang', array('menu' => 'khachhang'));
 });
 
 Route::get('/tuyendung', function() {
-    return View::make('tuyendung');
+    return View::make('tuyendung', array('menu' => 'tuyendung'));
 });
 
 Route::get('/hinhanh', function() {
-    return View::make('hinhanh');
+    return View::make('hinhanh',  array('menu' => 'dichvu'));
 });
 Route::get('/lienhe', function() {
-    return View::make('lienhe');
+    return View::make('lienhe', array('menu' => 'lienhe'));
 });
 
 Route::get('/gioithieu', function() {
-    return View::make('gioithieu');
+    return View::make('gioithieu', array('menu' => 'gioithieu'));
 });

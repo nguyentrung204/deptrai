@@ -25,6 +25,8 @@
 						$this.addClass('active');
 					}
 				});
+				
+				$('li[menu=<?php echo $menu; ?>] a').addClass('active');
 			});
 		</script>
 		@yield('js')
@@ -41,20 +43,21 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		  </button>
-		  <a class="navbar-brand" href="#"><img id="logo" src="{{ URL::asset('public/img/unnamed.png') }} "</a>
+		   <a class="navbar-brand" href="/deptrai"><img id="logo" src="{{ URL::asset('public/img/unnamed.png') }} "</a>
 		</div>
 		
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse main-menu navbar-collapse navbar-right navbar-bt" id="bs-example-navbar-collapse-1">
 		  <ul class="nav navbar-nav">
-			<li><a href="/deptrai">TRANG CHỦ<span class="sr-only">(current)</span></a></li>
-			<li><a href="/deptrai/gioithieu">GIỚI THIỆU</a></li>
-			<li><a href="/deptrai/hinhanh">DỊCH VỤ</a></li>
-			<li><a href="/deptrai/khachhang">KHÁCH HÀNG</a></li>
-			<li><a href="#">BÁO GIÁ</a></li>
-			<li><a href="/deptrai/tuyendung">TUYỂN DỤNG</a></li>
-			<li><a href="/deptrai/lienhe">LIÊN HỆ</a></li>
+			  <li menu="trangchu"><a href="/deptrai">TRANG CHỦ<span class="sr-only">(current)</span></a></li>
+			  <li menu="gioithieu"><a href="/deptrai/gioithieu">GIỚI THIỆU</a></li>
+			  <li menu="dichvu"><a href="/deptrai/hinhanh">DỊCH VỤ</a></li>
+			  <li menu="khachhang"><a href="/deptrai/khachhang">KHÁCH HÀNG</a></li>
+			  <li menu="baogia"><a href="/deptrai">BÁO GIÁ</a></li>
+			  <li menu="tuyendung"><a href="/deptrai/tuyendung">TUYỂN DỤNG</a></li>
+			  <li menu="lienhe"><a href="/deptrai/lienhe">LIÊN HỆ</a></li>
 		  </ul>
+		 
 		 
 		 
 		

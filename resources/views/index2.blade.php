@@ -30,7 +30,7 @@ $(function () {
 	
   </div>  
   
- <div id="khachhang" class="row" style="padding: 2px 3px;">
+ <div id="khachhang" class="row text-center" style="padding: 2px 3px;">
      
 	<div class="box-title">
                 <h3 class="title">Khách hàng của chúng tôi</h3>
@@ -78,7 +78,7 @@ $(function () {
                     </div>
                 </div>
             </div>
-         <a href="/deptrai/khachhang" id="company-readmore" class="btn">Xem thêm</a>
+         <a href="/deptrai/khachhang" id="company-readmore" class="btn btn-default"> &nbsp Xem thêm &nbsp</a>
   </div>
 
 @stop

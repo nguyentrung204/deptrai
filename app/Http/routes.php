@@ -102,3 +102,7 @@ Route::get('post/search', 'PostController@get');
 Route::get('/khachhang', function() {
     return View::make('khachhang');
 });
+
+Route::get('/tuyendung', function() {
+    return View::make('tuyendung');
+});

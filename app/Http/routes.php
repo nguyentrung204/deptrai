@@ -103,6 +103,10 @@ Route::get('/khachhang', function() {
     return View::make('khachhang');
 });
 
+Route::get('/tuyendung', function() {
+    return View::make('tuyendung');
+});
+
 Route::get('/lienhe', function() {
     return View::make('lienhe');
 });

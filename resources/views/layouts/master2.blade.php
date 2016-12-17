@@ -28,7 +28,6 @@
 		@yield('js')
 
 	</head>
-	
 	<nav class="navbar navbar-project1 navbar-fixed-top">
 	  <div class="container container-header">
 		<!-- Brand and toggle get grouped for better mobile display -->
@@ -62,27 +61,78 @@
 	<body>
 	   
 	    
-		<div id="content" class="container fill">
+		
 			@yield('content')
-		</div>
+		
        
-		
-		
-		<footer class="footer">
-		  <div class="container">
-			<div class="row">
-                <div class="col-xs-6 col-md-6 column-footer footer_company">
-					
-					<i class="fa fa-map-marker fa-lg" aria-hidden="true"></i> &nbsp 6 Bis Tôn Đức Thắng, P. Bến Nghé, Q. 1, Tp. HCM
-					<br/>
-					<i class="fa fa-phone fa-lg" aria-hidden="true"></i> &nbsp (08) 6680 9449
-				</div>
-			<div class="col-xs-6 col-md-6 column-footer column-footer-1">
-			
-			  
+	   
+	   <footer class="site-footer">
+
+      <!-- Top section -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>LIÊN HỆ</h6>
+			<div style="padding-left: 15px;margin: 10px 0px;">
+			<i class="fa fa-map-marker fa-lg" aria-hidden="true"></i> &nbsp Trụ sở chính : 6 Bis Tôn Đức Thắng, P. Bến Nghé, Q. 1, Tp. HCM
+			<br/>
+			<i class="fa fa-phone fa-lg" aria-hidden="true"></i> &nbsp Điện thoại hỗ trợ : +84 (0) 909 973 818  - (08) 6680 9449
+			<br/>
 			</div>
-			
-		  </div>
-		</footer>
+            <p class="text-justify">An employment website is a web site that deals specifically with employment or careers. Many employment websites are designed to allow.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>CÔNG TY</h6>
+            <ul class="footer-links">
+              <li><a href="page-about.html">Giới thiệu</a></li>
+              <li><a href="page-typography.html">Hình ảnh</a></li>
+              <li><a href="page-faq.html">Tuyển dụng</a></li>
+              <li><a href="page-typography.html">Đối tác</a></li>
+              <li><a href="page-contact.html">Liên hệ</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>DỊCH VỤ</h6>
+            <ul class="footer-links">
+              <li><a href="job-list.html">Nhân lực Vệ sinh</a></li>
+              <li><a href="job-list.html">Nhân lực Điện tử</a></li>
+              <li><a href="job-list.html">Nhân lực Xây dựng</a></li>
+              <li><a href="job-list.html">Nhân lực Giáo dục</a></li>
+              <li><a href="job-list.html">Nhân lực Buôn bán</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <hr>
+      </div>
+      <!-- END Top section -->
+
+      <!-- Bottom section -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyrights © 2016 All Rights Reserved by <a href="#">Exodus</a>.</p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- END Bottom section -->
+
+    </footer>
+	   
+		
+		
+		
 	</body>
 </html>

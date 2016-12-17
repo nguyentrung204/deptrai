@@ -15,6 +15,8 @@ body {
 
 ol, ul {
 	list-style: none;
+	padding:0px;
+	margin: 0px;
 }
 
 a:hover , a:active{
@@ -135,20 +137,244 @@ width: 165px;
     }
 }
 
+
+
+#khachhang .btn {
+    margin: 15px 0 50px;
+}
+
+#tuyendung .item .title {
+    font-weight: bold;
+    font-size: 20px;
+	margin: 10px 0px;
+	
+}
+
+#tuyendung .item {
+  box-shadow:	0 1px 2px rgba(0,0,0,0.07);
+  background: #fff;
+      padding: 10px 0px;
+	  margin: 0 15px 30px 15px;
+	  height: 207px;
+}
+
+#tuyendung .item .img-thumbnail {
+box-shadow: none;
+border: none;
+
+}
+
+#tuyendung .item .col-md-3 {
+ padding-left: 10px;
+ padding-right: 5px;
+
+}
+
+#tuyendung .item .col-md-9 {
+
+
+}
+
+
+#tuyendung .item .col-md-6 {
+	padding: 0px;
+
+}
+
+.site-footer {
+    background-color: #26272b;
+    padding: 45px 0 20px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #bbb;
+}
+
+.site-footer h6 {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 0;
+    letter-spacing: 2px;
+}
+.site-footer a {
+	color: #bbb;
+}
+
+.site-footer a:hover {
+    color: #fff;
+}
+
+#tuyendung .item .info {
+    border-bottom: 1px solid #ccc;
+    clear: both;
+    padding-bottom: 10px;
+    font-style: italic;
+	font-size: 14px;
+
+}
+
+#tuyendung .item .map,#tuyendung .item .money {
+	margin-bottom: 3px;
+
+}
+.site-footer .social-icons {
+    text-align: right;
+}
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
 #map {
     height: 300px !important;
     width: 100% !important;
 }
 
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #33353d;
+	    transition: all .2s linear;
+		    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+	text-align: center;
+}
+
+#tuyendung .item .description {
+	margin-top: 10px;
+}
+#tuyendung  #readmore {
+	margin-top: 5px;
+	margin-bottom: 25px;
+}
+
+.site-header h2 {
+    font-size: 37px;
+}
+
+.site-header h5 {
+    font-size: 20px;
+}
+
+
+
+.site-header:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: rgba(0,24,40,.55);
+}
+
+.site-header {
+	position: relative;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
 #contact {
     background-color: #1ABC9C;
     color: #fff;
+	padding: 50px 0px;
+	padding-top: 10px;
+
     padding-bottom: 20px;
 }
 
+.site-header mark {
+    color: rgba(92,190,254,.8);
+    background-color: transparent;
+    font-weight: 700;
 #contactInfo {
     padding-left: 75px;
 }
+
+.site-header .container {
+ padding-left: 46px;
+     padding-bottom: 25px;
+}   
+
+.header-job-search .input-keyword,
+.header-job-search .input-location {
+    position: relative;
+    width: 40%;
+}
+
+.header-job-search .input-location, .header-job-search  .input-keyword, .header-job-search .btn-search {
+    display: inline-block;
+    float: left;
+}
+.header-job-search .input-keyword .form-control {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-right: 1px solid #c2cdd1;
+}
+
+.header-job-search .form-control {
+    border: none;
+    padding-left: 60px;
+    height: 50px;
+    color: #55595c;
+	font-size: 15px ;
+	border-radius: 0;
+}
+
+.header-job-search .btn-search {
+    width: 20%;
+}
+
+.header-job-search .btn-search .btn {
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 16px;
+    text-transform: none;
+    height: 50px;
+    width: 100%;
+	background: #337ab7;
+}
+
+.header-job-search .btn-search .btn:hover {
+	color: #fff;
+}
+
+.btn-primary {
+    background-color: #29aafe;
+    border-color: #29aafe!important;
+}
+
+.header-job-search .input-keyword:before,
+.header-job-search .input-location:before {
+    position: absolute;
+    top: 0;
+    left: 18px;
+    font-family: FontAwesome;
+    font-size: 27px;
+    line-height: 50px;
+    color: #b3c1c6;
+    content: "\f002"
+}
+
+.header-job-search .input-location:before {
+    content: "\f041";
+}
+
+
+
+  
 
 .w-socials-item {
     margin: 0 4px 4px 0;

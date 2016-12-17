@@ -8,11 +8,17 @@
 @section('js')
 
 <script src="{{ URL::asset('public/js/post_list.js') }}"></script>
-
 <script>
 
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
+})
+$(document).ready(function() {
+    $(".thumbnail-classic").on("click", function(e) {
+        var $this = $(this);
+        $('#imagepreview').attr('src', $this.find("img")[0].src); // here asign the image to the modal when the user click the enlarge link
+        $('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+    });
 })
 
 </script>
@@ -119,39 +125,39 @@ $(function () {
 <div class="col-lg-12 offset-top-34">
 <div data-isotope-layout="fitRows" data-isotope-group="gallery" class="isotope isotope--loaded" >
 <div data-photo-swipe-gallery="gallery" class="row">
-<div data-filter="*" class="col-xs-12 col-sm-6 col-md-4 isotope-item" ><a class="thumbnail-classic" data-photo-swipe-item="" data-size="1170x600" href="{{ URL::asset('public/img/hinhanh/portfolio-02-1170x600.jpg' ) }}">
+<div data-filter="*" class="col-xs-12 col-sm-6 col-md-4 isotope-item hover01" ><a class="thumbnail-classic" data-photo-swipe-item="" data-size="1170x600" href="#">
 <figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/portfolio-02-1170x600.jpg' ) }}" alt="">
 </figure></a>
 </div>
-<div data-filter="Marketing" class="col-xs-12 col-sm-6 col-md-4 isotope-item" ><a class="thumbnail-classic" data-photo-swipe-item="" data-size="1170x600" href="{{ URL::asset('public/img/hinhanh/portfolio-03-1170x600.jpg' ) }}">
+<div data-filter="Marketing" class="col-xs-12 col-sm-6 col-md-4 isotope-item hover01" ><a class="thumbnail-classic" data-photo-swipe-item="" data-size="1170x600" href="#">
 <figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/portfolio-03-1170x600.jpg' ) }}" alt="">
 </figure></a>
 </div>
-<div data-filter="Marketing" class="col-xs-12 col-sm-6 col-md-4 isotope-item" ><a class="thumbnail-classic" data-photo-swipe-item="" data-size="1170x600" href="{{ URL::asset('public/img/hinhanh/portfolio-04-1170x600.jpg' ) }}">
+<div data-filter="Marketing" class="col-xs-12 col-sm-6 col-md-4 isotope-item hover01" ><a class="thumbnail-classic" data-photo-swipe-item="" data-size="1170x600" href="#">
 <figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/portfolio-04-1170x600.jpg' ) }}" alt="">
 </figure></a>
 </div>
-<div data-filter="Marketing" class="col-xs-12 col-sm-6 col-md-4 isotope-item" ><a class="thumbnail-classic" data-photo-swipe-item="" data-size="1170x600" href="{{ URL::asset('public/img/hinhanh/portfolio-05-1170x600.jpg' ) }}">
+<div data-filter="Marketing" class="col-xs-12 col-sm-6 col-md-4 isotope-item hover01" ><a class="thumbnail-classic" data-photo-swipe-item="" data-size="1170x600" href="#">
 <figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/portfolio-05-1170x600.jpg' ) }}" alt="">
 </figure></a>
 </div>
-<div data-filter="Business" class="col-xs-12 col-sm-6 col-md-4 isotope-item" ><a class="thumbnail-classic" data-photo-swipe-item="" data-size="1170x600" href="{{ URL::asset('public/img/hinhanh/portfolio-10-1170x600.jpg' ) }}">
+<div data-filter="Business" class="col-xs-12 col-sm-6 col-md-4 isotope-item hover01" ><a class="thumbnail-classic" data-photo-swipe-item="" data-size="1170x600" href="#">
 <figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/portfolio-10-1170x600.jpg' ) }}" alt="">
 </figure></a>
 </div>
-<div data-filter="Business" class="col-xs-12 col-sm-6 col-md-4 isotope-item" ><a class="thumbnail-classic" data-photo-swipe-item="" data-size="1170x600" href="{{ URL::asset('public/img/hinhanh/portfolio-15-1170x600.jpg' ) }}">
+<div data-filter="Business" class="col-xs-12 col-sm-6 col-md-4 isotope-item hover01" ><a class="thumbnail-classic" data-photo-swipe-item="" data-size="1170x600" href="#">
 <figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/portfolio-15-1170x600.jpg' ) }}" alt="">
 </figure></a>
 </div>
-<div data-filter="Clients" class="col-xs-12 col-sm-6 col-md-4 isotope-item" ><a class="thumbnail-classic" data-photo-swipe-item="" data-size="1170x600" href="{{ URL::asset('public/img/hinhanh/portfolio-16-1170x600.jpg' ) }}">
+<div data-filter="Clients" class="col-xs-12 col-sm-6 col-md-4 isotope-item hover01" ><a class="thumbnail-classic" data-photo-swipe-item="" data-size="1170x600" href="#">
 <figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/portfolio-16-1170x600.jpg' ) }}" alt="">
 </figure></a>
 </div>
-<div data-filter="Clients" class="col-xs-12 col-sm-6 col-md-4 isotope-item" ><a class="thumbnail-classic" data-photo-swipe-item="" data-size="1170x600" href="{{ URL::asset('public/img/hinhanh/portfolio-18-1170x600.jpg' ) }}">
+<div data-filter="Clients" class="col-xs-12 col-sm-6 col-md-4 isotope-item hover01" ><a class="thumbnail-classic" data-photo-swipe-item="" data-size="1170x600" href="#">
 <figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/portfolio-18-1170x600.jpg' ) }}" alt="">
 </figure></a>
 </div>
-<div data-filter="Clients" class="col-xs-12 col-sm-6 col-md-4 isotope-item" ><a class="thumbnail-classic" data-photo-swipe-item="" data-size="1170x600" href="{{ URL::asset('public/img/hinhanh/portfolio-20-1170x600.jpg' ) }}">
+<div data-filter="Clients" class="col-xs-12 col-sm-6 col-md-4 isotope-item hover01" ><a class="thumbnail-classic" data-photo-swipe-item="" data-size="1170x600" href="#">
 <figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/portfolio-20-1170x600.jpg' ) }}" alt="">
 </figure></a>
 </div>
@@ -160,6 +166,23 @@ $(function () {
 </div>
 </div>
 
+</div>
+
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Image preview</h4>
+            </div>
+            <div class="modal-body">
+                <img src="" id="imagepreview" style="width: 400px; height: 264px;" >
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
 </div>
 
 @stop

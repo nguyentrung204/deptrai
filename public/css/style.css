@@ -367,9 +367,6 @@ border: none;
 	margin-left: -3px;
 }
 
-
-
-
 #khachhang .cus{
 	background: #f0f0f0;
     padding: 10px 0px;
@@ -617,3 +614,26 @@ width: 190px;
     font-size: 36px;
 }
 
+/* Zoom In #1 */
+.hover01 figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.hover01 figure:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+figure {
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+}
+figure:hover+span {
+    bottom: -36px;
+    opacity: 1;
+}

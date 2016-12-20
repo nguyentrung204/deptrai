@@ -4,7 +4,11 @@ namespace App\Http\Controllers;
 
 use Facebook, Input, Auth;
 use App\Models\Profile;
+use App\Models\Config;
 use App\Models\User;
+ use Hash;
+ use Validator;
+ use Redirect;
 
 /**
  * @Author: NNTrung
@@ -20,6 +24,40 @@ class UserController extends Controller  {
         );
         return redirect($facebook->getLoginUrl($params));
     }
+	
+	public function login(){
+		
+		// validate the info, create rules for the inputs
+		$rules = array(
+			'email'    => 'required|email', // make sure the email is an actual email
+			'password' => 'required|alphaNum|min:3' // password can only be alphanumeric and has to be greater than 3 characters
+		);
+
+		// run the validation rules on the inputs from the form
+		$validator = Validator::make(Input::all(), $rules);
+		
+		if ($validator->fails()) {
+			return Redirect::to('admin.login')
+				->withErrors($validator) // send back all errors to the login form
+				->withInput(Input::except('password')); // send back the input (not the password) so that we can repopulate the form
+		} else {
+			// create our user data for the authentication
+			$userdata = array(
+				'email'     => Input::get('email'),
+				'password'  => Input::get('password')
+			);
+
+			if (Auth::attempt($userdata)) {
+				Auth::login(Auth::user(), true);
+				view()->share('user', Auth::User());
+				
+				return Redirect::to('admin/home');
+			} else {        
+				return Redirect::to('admin/login');
+
+			}
+		}
+	}
 	
 	public function loginWithFacebookCallback(){
         $code = Input::get('code');

@@ -12,7 +12,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 {
    use Authenticatable, CanResetPassword;
 	
-   protected $table = 'user';   
+   protected $table = 'account';   
    
    protected $fillable = ['*'];
    
@@ -20,7 +20,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
    
    protected $hidden = ['password', 'remember_token'];
 
-   public function profile()
+   /*public function profile()
    {
        return $this->hasMany('App\Models\Profile');
    }
@@ -28,5 +28,5 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
    public function post()
    {
        return $this->hasMany('App\Models\Post');
-   }
+   }*/
 }

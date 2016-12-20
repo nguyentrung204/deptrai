@@ -29,9 +29,9 @@ Route::get('/', function() {
 /**
  * Đăng xuất
  */
-Route::get('logout', function() {
+Route::get('/admin/logout', function() {
     Auth::logout();
-    return Redirect::to('/login');
+    return Redirect::to('/admin/login');
 });
 
 /**
@@ -116,4 +116,14 @@ Route::get('/lienhe', function() {
 
 Route::get('/gioithieu', function() {
     return View::make('gioithieu', array('menu' => 'gioithieu'));
+});
+
+Route::get('/admin/login', function() {
+    return View::make('admin');
+});
+
+Route::post('/admin/login', 'UserController@login');
+
+Route::get('/admin/home', function() {
+    return View::make('admin_home');
 });

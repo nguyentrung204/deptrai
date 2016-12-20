@@ -1,0 +1,1 @@
+Hello {{ $user['email']}} <a href="logout">logout</a>

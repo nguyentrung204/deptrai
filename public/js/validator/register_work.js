@@ -15,16 +15,21 @@ $(document).ready(function() {
 	
 	$("#registerForm").validate({
 	  rules: {
-	    name: {
+	    title: {
 	    	required: true,
 	    	maxlength: 200 
 	    },
+		salaryfrom : {
+			required: true,
+			maxlength: 200 
+		}
+		
 	    sex: {
 	        required: true,
 	        number: true,
 	        maxlength: 1
 	    },
-	    birthday: {
+	    workDate: {
 	        required: true,
 	        dateFormat: true
 	    },

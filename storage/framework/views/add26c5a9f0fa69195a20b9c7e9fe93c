@@ -1,0 +1,523 @@
+﻿
+
+<?php $__env->startSection('title', trans('login.title')); ?>
+
+<?php $__env->startSection('content'); ?>
+
+<script>
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+</script>
+
+
+    <div class="alert alert-warning alert-dismissible fade in" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+      <strong>Mẹo :</strong> Website sẽ chạy tốt hơn với trình duyệt Chrome, tải phiên bản mới nhất <a target="_blank" href="https://www.google.com/chrome/browser/desktop/index.html">tại đây</a>.
+    </div>
+
+  <ol class="list-item clearfix">
+    <li class="item-group col-md-3 col-sm-4 col-xs-6 clear-fix">
+	  <div class="item">
+        <div class="item-shot">
+          <div class="item-img" onclick="javascript:location.href='post/view/1'">
+		    <img src="https://d13yacurqjgara.cloudfront.net/users/5976/screenshots/2208715/open-uri20150823-3-1li2f2z_teaser" />
+		  </div>
+          <ul class="tools clear-fix">
+		    <li class="fav">
+			  <a title="View fans of this shot" href="/shots/2208555-OS-X-Concept-presentation/fans">204</a>
+		    </li>
+		    <li class="cmnt">
+			  <span original-title="">6</span>
+		    </li>
+		    <li class="views">
+			  <span>928</span>
+		    </li>
+		  </ul>
+		  <div class="extras">
+			<span rel="tipsy" class="attachments-mark" original-title="This shot has attachments" style="display: inline;">
+              <img width="16" data-toggle="tooltip" data-placement="left" title="Tooltip on top" height="16" alt="Attachments" src="https://d13yacurqjgara.cloudfront.net/assets/icon-attach-16-2x-09bed42f07f474e403420377d95f54c8.png">
+            </span>
+          </div>
+		  
+        </div>
+      </div>
+	  <h2>
+        <span class="attribution-user">
+          <a class="url" rel="contact" title="Nguyễn Trung 💠" href="/aureliensalomon"><img class="photo" src="https://d13yacurqjgara.cloudfront.net/users/30252/avatars/mini/a8b7eb3a7c2e5a535337f44fa0bda235.png?1421609695" alt="A8b7eb3a7c2e5a535337f44fa0bda235"> Nguyễn Ngọc Trung</a>
+          <a class="badge-link hide" href="/pro">
+            <span class="badge badge-pro">Pro</span>
+          </a>
+        </span>
+      </h2>
+	</li>
+	
+	<li class="item-group col-md-3 col-sm-4 col-xs-6 clear-fix">
+	  <div class="item">
+        <div class="item-shot">
+          <div class="item-img">
+		    <img src="https://d13yacurqjgara.cloudfront.net/users/31348/screenshots/2028011/doritos_teaser.jpg" />
+		  </div>
+          <ul class="tools clear-fix">
+		    <li class="fav">
+			  <a title="View fans of this shot" href="/shots/2208555-OS-X-Concept-presentation/fans">204</a>
+		    </li>
+		    <li class="cmnt">
+			  <span original-title="">6</span>
+		    </li>
+		    <li class="views">
+			  <span>928</span>
+		    </li>
+		  </ul>
+        </div>
+      </div>
+	  <h2>
+        <span class="attribution-user">
+          <a class="url" rel="contact" title="Nguyễn Trung 💠" href="/aureliensalomon"><img class="photo" src="https://d13yacurqjgara.cloudfront.net/users/3820/avatars/mini/636350755bd370f7f7287c0998cfbdfd.png?1422121554" alt="A8b7eb3a7c2e5a535337f44fa0bda235"> Mai Trần Như 💠</a>
+          <a class="badge-link hide" href="/pro">
+            <span class="badge badge-pro">Pro</span>
+          </a>
+        </span>
+      </h2>
+	</li>
+	
+	<li class="item-group col-md-3 col-sm-4 col-xs-6 clear-fix">
+	  <div class="item">
+        <div class="item-shot">
+          <div class="item-img">
+		    <img src="https://d13yacurqjgara.cloudfront.net/users/243950/screenshots/835883/ca_teaser.jpg" />
+		  </div>
+          <ul class="tools clear-fix">
+		    <li class="fav">
+			  <a title="View fans of this shot" href="/shots/2208555-OS-X-Concept-presentation/fans">204</a>
+		    </li>
+		    <li class="cmnt">
+			  <span original-title="">6</span>
+		    </li>
+		    <li class="views">
+			  <span>928</span>
+		    </li>
+		  </ul>
+		  <div class="extras">
+			<span rel="tipsy" class="attachments-mark" original-title="This shot has attachments" style="display: inline;">
+              <img width="16" height="16" alt="Attachments" src="https://d13yacurqjgara.cloudfront.net/assets/icon-attach-16-2x-09bed42f07f474e403420377d95f54c8.png">
+            </span>
+          </div>
+        </div>
+      </div>
+	  <h2>
+        <span class="attribution-user">
+          <a class="url" rel="contact" title="Nguyễn Trung 💠" href="/aureliensalomon"><img class="photo" src="https://d13yacurqjgara.cloudfront.net/users/229218/avatars/mini/photo_profile5.png?1394096189" alt="A8b7eb3a7c2e5a535337f44fa0bda235"> Làng Tô Thị</a>
+          <a class="badge-link hide" href="/pro">
+            <span class="badge badge-pro">Pro</span>
+          </a>
+        </span>
+      </h2>
+	</li>
+	
+	<li class="item-group col-md-3 col-sm-4 col-xs-6 clear-fix">
+	  <div class="item">
+        <div class="item-shot">
+          <div class="item-img">
+		    <img src="https://d13yacurqjgara.cloudfront.net/users/5146/screenshots/263945/yardsaleshirtdribbble_teaser.jpg" />
+		  </div>
+          <ul class="tools clear-fix">
+		    <li class="fav">
+			  <a title="View fans of this shot" href="/shots/2208555-OS-X-Concept-presentation/fans">204</a>
+		    </li>
+		    <li class="cmnt">
+			  <span original-title="">6</span>
+		    </li>
+		    <li class="views">
+			  <span>928</span>
+		    </li>
+		  </ul>
+		   <div class="extras">
+			<span rel="tipsy" class="attachments-mark" original-title="This shot has attachments" style="display: inline;">
+              <img width="16" height="16" alt="Attachments" src="https://d13yacurqjgara.cloudfront.net/assets/icon-attach-16-2x-09bed42f07f474e403420377d95f54c8.png">
+            </span>
+          </div>
+        </div>
+      </div>
+	  <h2>
+        <span class="attribution-user">
+          <a class="url" rel="contact" title="Nguyễn Trung 💠" href="/aureliensalomon"><img class="photo" src="https://d13yacurqjgara.cloudfront.net/users/44126/avatars/mini/b0657b151d55612242b1b015b7f2f2db.jpg?1415905329" alt="A8b7eb3a7c2e5a535337f44fa0bda235"> Huỳnh Bảo Long</a>
+          <a class="badge-link hide" href="/pro">
+            <span class="badge badge-pro">Pro</span>
+          </a>
+        </span>
+      </h2>
+	</li>
+	
+	<li class="item-group col-md-3 col-sm-4 col-xs-6 clear-fix">
+	  <div class="item">
+        <div class="item-shot">
+          <div class="item-img">
+		    <img src="https://d13yacurqjgara.cloudfront.net/users/255/screenshots/2027428/cs-emotions_teaser.gif" />
+		  </div>
+          <ul class="tools clear-fix">
+		    <li class="fav">
+			  <a title="View fans of this shot" href="/shots/2208555-OS-X-Concept-presentation/fans">204</a>
+		    </li>
+		    <li class="cmnt">
+			  <span original-title="">6</span>
+		    </li>
+		    <li class="views">
+			  <span>928</span>
+		    </li>
+		  </ul>
+        </div>
+      </div>
+	  <h2>
+        <span class="attribution-user">
+          <a class="url" rel="contact" title="Nguyễn Trung 💠" href="/aureliensalomon"><img class="photo" src="https://d13yacurqjgara.cloudfront.net/users/14827/avatars/mini/avataroykunn.png?1395759380" alt="A8b7eb3a7c2e5a535337f44fa0bda235"> Nguyễn Thị Mỹ Phượng</a>
+          <a class="badge-link hide" href="/pro">
+            <span class="badge badge-pro">Pro</span>
+          </a>
+        </span>
+      </h2>
+	</li>
+	
+	<li class="item-group col-md-3 col-sm-4 col-xs-6 clear-fix">
+	  <div class="item">
+        <div class="item-shot">
+          <div class="item-img">
+		    <img src="https://d13yacurqjgara.cloudfront.net/users/42588/screenshots/273366/cantos2_teaser.jpg" />
+		  </div>
+          <ul class="tools clear-fix">
+		    <li class="fav">
+			  <a title="View fans of this shot" href="/shots/2208555-OS-X-Concept-presentation/fans">204</a>
+		    </li>
+		    <li class="cmnt">
+			  <span original-title="">6</span>
+		    </li>
+		    <li class="views">
+			  <span>928</span>
+		    </li>
+		  </ul>
+        </div>
+      </div>
+	  <h2>
+        <span class="attribution-user">
+          <a class="url" rel="contact" title="Nguyễn Trung 💠" href="/aureliensalomon"><img class="photo" src="https://d13yacurqjgara.cloudfront.net/users/142911/avatars/mini/anton_logo_s.png?1376701048" alt="A8b7eb3a7c2e5a535337f44fa0bda235"> John Katty</a>
+          <a class="badge-link hide" href="/pro">
+            <span class="badge badge-pro">Pro</span>
+          </a>
+        </span>
+      </h2>
+	</li>
+	
+	<li class="item-group col-md-3 col-sm-4 col-xs-6 clear-fix">
+	  <div class="item">
+        <div class="item-shot">
+          <div class="item-img">
+		    <img src="https://d13yacurqjgara.cloudfront.net/users/1972/screenshots/829195/slate_preview_800x600_teaser.png" />
+		  </div>
+          <ul class="tools clear-fix">
+		    <li class="fav">
+			  <a title="View fans of this shot" href="/shots/2208555-OS-X-Concept-presentation/fans">204</a>
+		    </li>
+		    <li class="cmnt">
+			  <span original-title="">6</span>
+		    </li>
+		    <li class="views">
+			  <span>928</span>
+		    </li>
+		  </ul>
+        </div>
+      </div>
+	  <h2>
+        <span class="attribution-user">
+          <a class="url" rel="contact" title="Nguyễn Trung 💠" href="/aureliensalomon"><img class="photo" src="https://d13yacurqjgara.cloudfront.net/users/2645/avatars/mini/morgan.png?1374088522" alt="A8b7eb3a7c2e5a535337f44fa0bda235"> Bản Doanh Giặc</a>
+          <a class="badge-link hide" href="/pro">
+            <span class="badge badge-pro">Pro</span>
+          </a>
+        </span>
+      </h2>
+	</li>
+	
+	<li class="item-group col-md-3 col-sm-4 col-xs-6 clear-fix">
+	  <div class="item">
+        <div class="item-shot">
+          <div class="item-img">
+		    <img src="https://d13yacurqjgara.cloudfront.net/users/6244/screenshots/1764345/happyjamming_teaser.png" />
+		  </div>
+          <ul class="tools clear-fix">
+		    <li class="fav">
+			  <a title="View fans of this shot" href="/shots/2208555-OS-X-Concept-presentation/fans">204</a>
+		    </li>
+		    <li class="cmnt">
+			  <span original-title="">6</span>
+		    </li>
+		    <li class="views">
+			  <span>928</span>
+		    </li>
+		  </ul>
+		   <div class="extras">
+			<span rel="tipsy" class="attachments-mark" original-title="This shot has attachments" style="display: inline;">
+              <img width="16" height="16" alt="Attachments" src="https://d13yacurqjgara.cloudfront.net/assets/icon-attach-16-2x-09bed42f07f474e403420377d95f54c8.png">
+            </span>
+          </div>
+        </div>
+      </div>
+	  <h2>
+        <span class="attribution-user">
+          <a class="url" rel="contact" title="Nguyễn Trung 💠" href="/aureliensalomon"><img class="photo" src="https://d13yacurqjgara.cloudfront.net/users/6244/avatars/mini/4e08ff2c3d974506dda5de699d60ca5c.png?1438684936" alt="A8b7eb3a7c2e5a535337f44fa0bda235"> Như Mãi Heo</a>
+          <a class="badge-link hide" href="/pro">
+            <span class="badge badge-pro">Pro</span>
+          </a>
+        </span>
+      </h2>
+	</li>
+	
+	<li class="item-group col-md-3 col-sm-4 col-xs-6 clear-fix">
+	  <div class="item">
+        <div class="item-shot">
+          <div class="item-img">
+		    <img src="https://d13yacurqjgara.cloudfront.net/users/96442/screenshots/1543640/pollas_teaser.png" />
+		  </div>
+          <ul class="tools clear-fix">
+		    <li class="fav">
+			  <a title="View fans of this shot" href="/shots/2208555-OS-X-Concept-presentation/fans">204</a>
+		    </li>
+		    <li class="cmnt">
+			  <span original-title="">6</span>
+		    </li>
+		    <li class="views">
+			  <span>928</span>
+		    </li>
+		  </ul>
+        </div>
+      </div>
+	  <h2>
+        <span class="attribution-user">
+          <a class="url" rel="contact" title="Nguyễn Trung 💠" href="/aureliensalomon"><img class="photo" src="https://d13yacurqjgara.cloudfront.net/users/91300/avatars/original/FM.jpg?1326294295" alt="A8b7eb3a7c2e5a535337f44fa0bda235"> Nguyễn Hoàng Khải Minh</a>
+          <a class="badge-link hide" href="/pro">
+            <span class="badge badge-pro">Pro</span>
+          </a>
+        </span>
+      </h2>
+	</li>
+	
+	<li class="item-group col-md-3 col-sm-4 col-xs-6 clear-fix">
+	  <div class="item">
+        <div class="item-shot">
+          <div class="item-img">
+		    <img src="https://d13yacurqjgara.cloudfront.net/users/67884/screenshots/1368495/astro_boy_teaser.jpg" />
+		  </div>
+          <ul class="tools clear-fix">
+		    <li class="fav">
+			  <a title="View fans of this shot" href="/shots/2208555-OS-X-Concept-presentation/fans">204</a>
+		    </li>
+		    <li class="cmnt">
+			  <span original-title="">6</span>
+		    </li>
+		    <li class="views">
+			  <span>928</span>
+		    </li>
+		  </ul>
+        </div>
+      </div>
+	  <h2>
+        <span class="attribution-user">
+          <a class="url" rel="contact" title="Nguyễn Trung 💠" href="/aureliensalomon"><img class="photo" src="https://d13yacurqjgara.cloudfront.net/users/67884/avatars/mini/eb394ebd53729fa7e7be1123a8d5a281.png?1426987220" alt="A8b7eb3a7c2e5a535337f44fa0bda235"> Jhin Xao Sín</a>
+          <a class="badge-link hide" href="/pro">
+            <span class="badge badge-pro">Pro</span>
+          </a>
+        </span>
+      </h2>
+	</li>
+	
+	<li class="item-group col-md-3 col-sm-4 col-xs-6 clear-fix">
+	  <div class="item">
+        <div class="item-shot">
+          <div class="item-img">
+		    <img src="https://d13yacurqjgara.cloudfront.net/users/189580/screenshots/689910/screenhunter_75_aug._15_15.05_teaser.jpg" />
+		  </div>
+          <ul class="tools clear-fix">
+		    <li class="fav">
+			  <a title="View fans of this shot" href="/shots/2208555-OS-X-Concept-presentation/fans">204</a>
+		    </li>
+		    <li class="cmnt">
+			  <span original-title="">6</span>
+		    </li>
+		    <li class="views">
+			  <span>928</span>
+		    </li>
+		  </ul>
+		   <div class="extras">
+			<span rel="tipsy" class="attachments-mark" original-title="This shot has attachments" style="display: inline;">
+              <img width="16" height="16" alt="Attachments" src="https://d13yacurqjgara.cloudfront.net/assets/icon-attach-16-2x-09bed42f07f474e403420377d95f54c8.png">
+            </span>
+          </div>
+        </div>
+      </div>
+	  <h2>
+        <span class="attribution-user">
+          <a class="url" rel="contact" title="Nguyễn Trung 💠" href="/aureliensalomon"><img class="photo" src="https://d13yacurqjgara.cloudfront.net/users/189580/avatars/mini/39f2d214aa189d0cf64474a2a54e96ef.jpg?1414198378" alt="A8b7eb3a7c2e5a535337f44fa0bda235"> Gia Ân </a>
+          <a class="badge-link hide" href="/pro">
+            <span class="badge badge-pro">Pro</span>
+          </a>
+        </span>
+      </h2>
+	</li>
+	
+	<li class="item-group col-md-3 col-sm-4 col-xs-6 clear-fix">
+	  <div class="item">
+        <div class="item-shot">
+          <div class="item-img">
+		    <img src="https://d13yacurqjgara.cloudfront.net/users/13307/screenshots/2170826/character_design_teaser.jpg" />
+		  </div>
+          <ul class="tools clear-fix">
+		    <li class="fav">
+			  <a title="View fans of this shot" href="/shots/2208555-OS-X-Concept-presentation/fans">204</a>
+		    </li>
+		    <li class="cmnt">
+			  <span original-title="">6</span>
+		    </li>
+		    <li class="views">
+			  <span>928</span>
+		    </li>
+		  </ul>
+        </div>
+      </div>
+	  <h2>
+        <span class="attribution-user">
+          <a class="url" rel="contact" title="Nguyễn Trung 💠" href="/aureliensalomon"><img class="photo" src="https://d13yacurqjgara.cloudfront.net/users/189580/avatars/mini/39f2d214aa189d0cf64474a2a54e96ef.jpg?1414198378" alt="A8b7eb3a7c2e5a535337f44fa0bda235"> Lê Thị Mỹ Tâm </a>
+          <a class="badge-link hide" href="/pro">
+            <span class="badge badge-pro">Pro</span>
+          </a>
+        </span>
+      </h2>
+	</li>
+	
+	<li class="item-group col-md-3 col-sm-4 col-xs-6 clear-fix">
+	  <div class="item">
+        <div class="item-shot">
+          <div class="item-img">
+		    <img src="https://d13yacurqjgara.cloudfront.net/users/13307/screenshots/1574202/fashion_teaser.jpg" />
+		  </div>
+          <ul class="tools clear-fix">
+		    <li class="fav">
+			  <a title="View fans of this shot" href="/shots/2208555-OS-X-Concept-presentation/fans">204</a>
+		    </li>
+		    <li class="cmnt">
+			  <span original-title="">6</span>
+		    </li>
+		    <li class="views">
+			  <span>928</span>
+		    </li>
+		  </ul>
+        </div>
+      </div>
+	  <h2>
+        <span class="attribution-user">
+          <a class="url" rel="contact" title="Nguyễn Trung 💠" href="/aureliensalomon"><img class="photo" src="https://d13yacurqjgara.cloudfront.net/users/898698/avatars/normal/441a9e70c4dbf9496a894fa681aa1acd.jpg?1436588141" alt="A8b7eb3a7c2e5a535337f44fa0bda235"> Sóc Trăng Ba Sói </a>
+          <a class="badge-link hide" href="/pro">
+            <span class="badge badge-pro">Pro</span>
+          </a>
+        </span>
+      </h2>
+	</li>
+	
+	<li class="item-group col-md-3 col-sm-4 col-xs-6 clear-fix">
+	  <div class="item">
+        <div class="item-shot">
+          <div class="item-img">
+		    <img src="https://d13yacurqjgara.cloudfront.net/users/270425/screenshots/2208891/house-cards_01_teaser.jpg" />
+		  </div>
+          <ul class="tools clear-fix">
+		    <li class="fav">
+			  <a title="View fans of this shot" href="/shots/2208555-OS-X-Concept-presentation/fans">204</a>
+		    </li>
+		    <li class="cmnt">
+			  <span original-title="">6</span>
+		    </li>
+		    <li class="views">
+			  <span>928</span>
+		    </li>
+		  </ul>
+        </div>
+      </div>
+	  <h2>
+        <span class="attribution-user">
+          <a class="url" rel="contact" title="Nguyễn Trung 💠" href="/aureliensalomon"><img class="photo" src="https://d13yacurqjgara.cloudfront.net/users/270425/avatars/mini/251937069873221d6f3c5dfbbe4ddeba.jpg?1428342182" alt="A8b7eb3a7c2e5a535337f44fa0bda235"> Kelly Trần </a>
+          <a class="badge-link hide" href="/pro">
+            <span class="badge badge-pro">Pro</span>
+          </a>
+        </span>
+      </h2>
+	</li>
+	
+	<li class="item-group col-md-3 col-sm-4 col-xs-6 clear-fix">
+	  <div class="item">
+        <div class="item-shot">
+          <div class="item-img">
+		    <img src="https://d13yacurqjgara.cloudfront.net/users/168137/screenshots/2209193/drib_teaser.jpg" />
+		  </div>
+          <ul class="tools clear-fix">
+		    <li class="fav">
+			  <a title="View fans of this shot" href="/shots/2208555-OS-X-Concept-presentation/fans">204</a>
+		    </li>
+		    <li class="cmnt">
+			  <span original-title="">6</span>
+		    </li>
+		    <li class="views">
+			  <span>928</span>
+		    </li>
+		  </ul>
+        </div>
+      </div>
+	  <h2>
+        <span class="attribution-user">
+          <a class="url" rel="contact" title="Nguyễn Trung 💠" href="/aureliensalomon"><img class="photo" src="https://d13yacurqjgara.cloudfront.net/users/567989/avatars/mini/3c1abb4.jpeg?1399603304" alt="A8b7eb3a7c2e5a535337f44fa0bda235"> Kinh Đô </a>
+          <a class="badge-link hide" href="/pro">
+            <span class="badge badge-pro">Pro</span>
+          </a>
+        </span>
+      </h2>
+	</li>
+	
+	<li class="item-group col-md-3 col-sm-4 col-xs-6 clear-fix">
+	  <div class="item">
+        <div class="item-shot">
+          <div class="item-img">
+		    <img src="https://d13yacurqjgara.cloudfront.net/users/885922/screenshots/2208778/1_teaser.jpg" />
+		  </div>
+          <ul class="tools clear-fix">
+		    <li class="fav">
+			  <a title="View fans of this shot" href="/shots/2208555-OS-X-Concept-presentation/fans">204</a>
+		    </li>
+		    <li class="cmnt">
+			  <span original-title="">6</span>
+		    </li>
+		    <li class="views">
+			  <span>928</span>
+		    </li>
+		  </ul>
+        </div>
+      </div>
+	  <h2>
+        <span class="attribution-user">
+          <a class="url" rel="contact" title="Nguyễn Trung 💠" href="/aureliensalomon"><img class="photo" src="https://d13yacurqjgara.cloudfront.net/users/24612/avatars/mini/c0b2910d67156cbe0a3ccbda4370792c.jpg?1424969482" alt="A8b7eb3a7c2e5a535337f44fa0bda235"> Phan Huy Liệu </a>
+          <a class="badge-link hide" href="/pro">
+            <span class="badge badge-pro">Pro</span>
+          </a>
+        </span>
+      </h2>
+	</li>
+  </ol>
+  
+  <nav>
+   <ul class="pager">
+    <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> <?php echo e(trans('captions.C0007')); ?></a></li>
+    <li class="next"><a href="#"><?php echo e(trans('captions.C0006')); ?> <span aria-hidden="true">&rarr;</span></a></li>
+   </ul>
+  </nav>
+  
+
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

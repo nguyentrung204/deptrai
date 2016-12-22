@@ -1,0 +1,84 @@
+<?php $__env->startSection('title', trans('login.title')); ?>
+
+<?php $__env->startSection('plugin'); ?>
+
+<meta property="fb:app_id" content="233300430056576" />
+<meta property="fb:admins" content="100000948639194"/>
+<script>
+	(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.4&appId=233300430056576";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<?php $__env->stopSection(); ?>
+
+
+<?php $__env->startSection('content'); ?>
+
+	<div class="detail-container">
+		<div class="text-center">
+			<div class="entry-time">July 10, 2015</div>
+			<h2 class="entry-title" > ABSOLUTELY ANYTHING - QUYỀN NĂNG PHÁ HOẠI NHẤT MỌI THỜI ĐẠI</h2>
+			
+			<div class="entry-meta">
+				<ul class="entry-meta-list plain-list">
+					<li><i class="fa fa-thumbs-o-up"></i> <a href="#" rel="category tag">192 Thích</a></li>
+					<li><i class="fa fa-eye"></i> 1,534 Lượt xem</li>
+				</ul>
+			</div>
+			
+		</div>
+		<div class="content">
+		
+		
+			<p><span class="dropcap" style="float: left; padding: 0px; font-size: 92.2388059701493px; line-height: 0px; margin-top: 7.82px; height: 61.8px;">R<span style="display: inline-block; height: 61.8px;"></span></span>a mắt kh&aacute;n giả H&agrave;n Quốc từ cuối th&aacute;ng 7 vừa qua, <a href="http://www.123phim.vn/phim/877-biet-doi-sat-thu-assassination.html" target="_blank">Assassination</a> đ&atilde; c&oacute; được hơn 10,8 triệu lượt người xem, thu về 71 triệu USD tiền b&aacute;n v&eacute; v&agrave; lọt v&agrave;o top 10 phim ăn kh&aacute;ch nhất tại xứ sở kim chi. Chỉ 1 th&aacute;ng sau khi ph&aacute;t h&agrave;nh tại qu&ecirc; nh&agrave;, bộ phim đ&atilde; c&oacute; mặt tại c&aacute;c rạp chiếu phim Việt Nam từ 21 th&aacute;ng 8 dưới tựa đề <em>Sứ mệnh truy s&aacute;t</em>.</p>
+<p><em>Assassination</em> l&agrave; một bộ phim được đầu tư rất c&ocirc;ng phu với cả một d&agrave;n viễn vi&ecirc;n s&aacute;ng gi&aacute;. <a href="http://www.123phim.vn/dien-vien/2005-gianna-jun.html" target="_blank">Jun Ji Hyun</a> ch&iacute;nh l&agrave; mỹ nh&acirc;n của <em>C&ocirc; n&agrave;ng ngổ ng&aacute;o (My Sassy Girl)</em>- bộ phim h&agrave;i từng tạo n&ecirc;n cơn sốt tại c&aacute;c m&agrave;n ảnh ch&acirc;u &Aacute; v&agrave; gần đ&acirc;y nhất l&agrave; loạt phim truyền h&igrave;nh <em>V&igrave; sao đưa anh tới</em>. Trong khi đ&oacute;, <a href="http://www.123phim.vn/dien-vien/410-lee-jung-jae.html" target="_blank">Lee Jung Jae</a> vốn được biết đến với những vai diễn ấn tượng trong những bộ phim xuất sắc của H&agrave;n Quốc như <em>Sandglass, The Housemaid</em> v&agrave; <em>City of the Rising Sun</em> c&ograve;n <a href="http://www.123phim.vn/dien-vien/760-ha-jung-woo.html" target="_blank">Ha Jung-woo</a> vốn nổi tiếng với những vai diễn gai g&oacute;c trong <em>The Yellow Sea, The Terror Live</em> v&agrave; <em>The Berlin File</em>. Phim c&ograve;n được thực hiện bởi đạo diễn Choi Dong-hoon, &ocirc;ng ho&agrave;ng ph&ograve;ng v&eacute; H&agrave;n Quốc trong suốt 10 năm vừa qua với những bộ phim ăn kh&aacute;ch h&agrave;ng đầu như <em>Tazza: The High Rollers, Jeon Woo-chi: The Taoist Wizard </em>v&agrave; gần đ&acirc;y nhất l&agrave; <em>The Thieves.</em></p>
+<p><em><img style="display: block; margin-left: auto; margin-right: auto;" src="http://s3.img.edn.vn/123phim/2015/08/5581e1ade06af5bbfb7dc140f312b042.jpg" alt="" /></em></p>
+<p><em>Assassination</em> lấy bối cảnh thập ni&ecirc;n 1930, xoay quanh c&acirc;u chuyện về &acirc;m mưu &aacute;m s&aacute;t một g&atilde; t&agrave;i phiệt đi theo qu&acirc;n x&acirc;m lược Nhật Bản của nh&oacute;m người Triều Ti&ecirc;n y&ecirc;u nước. Trong phim, Jun Ji Hyun v&agrave;o vai nữ xạ thủ Ok-yoon. C&ocirc; được đặc vụ của ch&iacute;nh phủ l&acirc;m thời H&agrave;n Quốc - Yeom Seok-jin (<a href="http://www.123phim.vn/dien-vien/410-lee-jung-jae.html" target="_blank">Lee Jung-jae</a>) cử đi thực hiện nhiệm vụ c&ugrave;ng hai đồng đội l&agrave; Big Gun (Cho Jin-woong) v&agrave; chuy&ecirc;n gia chất nổ Deok-sam (Choi Deok-moon). Tuy vậy, chẳng ai ngờ rằng: một th&agrave;nh vi&ecirc;n của nh&oacute;m l&agrave; kẻ b&iacute; mật l&agrave;m việc cho qu&acirc;n Nhật v&agrave; &nbsp;đ&atilde; thu&ecirc; hai tay s&aacute;t thủ Hawaii Pistol (<a href="http://www.123phim.vn/dien-vien/760-ha-jung-woo.html" target="_blank">Ha Jung Woo</a>) v&agrave; Old Man (Oh Dal-su) để ti&ecirc;u diệt cả đội.</p>
+<p><iframe style="display: block; margin-left: auto; margin-right: auto;" src="http://www.youtube.com/embed/WGjbKcCpaNQ" frameborder="0" width="600" height="350"></iframe></p>
+<p>Điểm s&aacute;ng đ&aacute;ng ch&uacute; &yacute; đầu ti&ecirc;n của <a href="http://www.123phim.vn/phim/877-biet-doi-sat-thu-assassination.html" target="_blank">Assassination</a> l&agrave; phần phục trang cầu k&igrave; v&agrave; bối cảnh kh&aacute; ho&agrave;nh tr&aacute;ng. C&aacute;c địa điểm xuất hiện trải d&agrave;i từ Thượng Hải, M&atilde;n Ch&acirc;u, Vũ H&aacute;n cho tới Seoul, Goyang. Phải n&oacute;i rằng c&aacute;c nh&agrave; l&agrave;m phim đ&atilde; t&aacute;i hiện rất th&agrave;nh c&ocirc;ng kh&ocirc;ng kh&iacute; của cả b&aacute;n đảo Triều Ti&ecirc;n lẫn một phần Trung Quốc trong thập ni&ecirc;n 1930. Th&ecirc;m nữa, c&aacute;c khung h&igrave;nh trong phim đều được chau chuốt v&agrave; căn chỉnh tỉ mỉ l&agrave;m <em>Assassination</em> trở th&agrave;nh bộ phim c&oacute; phần h&igrave;nh ảnh rất xuất sắc.</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://s3.img.edn.vn/123phim/2015/08/b0750b59b977e733c062fc2c0f1a7de1.jpg" alt=""  /></p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://s3.img.edn.vn/123phim/2015/08/2e0805a1049cd2b03ed72568fa405a6d.jpg" alt=""  /></p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://s3.img.edn.vn/123phim/2015/08/14b66836a2fc422cfe0fb343be231d23.jpg" alt=""  /></p>
+<p>Song, c&aacute;ch dẫn dắt c&acirc;u truyện của <em>Assassination</em> lại kh&ocirc;ng mấy mạch lạc. N&oacute; c&oacute; phần mở đầu kh&aacute; d&agrave;i d&ograve;ng: tốn gần 1/3 của thời lượng 140 ph&uacute;t để giới thiệu nh&acirc;n vật v&agrave; mục đ&iacute;ch cho h&agrave;nh động của họ. Tuy tốn c&ocirc;ng sức nhưng kết quả lại kh&ocirc;ng được như mong đợi. H&agrave;ng loạt dữ liệu được nhồi nh&eacute;t. Những th&ocirc;ng điệp về l&ograve;ng y&ecirc;u nước trở được đưa ra một c&aacute;ch gi&aacute;o điều để rồi sau đ&oacute; tr&ocirc;i tuồn tuột khỏi t&acirc;m tr&iacute; người xem. V&agrave;i ba cảnh bắn giết nhỏ lẻ v&agrave; ch&oacute;ng v&aacute;nh kh&ocirc;ng thể n&agrave;o l&agrave;m kh&aacute;n giả cảm nhận được sự đau khổ khốn c&ugrave;ng của người d&acirc;n H&agrave;n Quốc dưới &aacute;ch thống trị Nhật Bản. Hậu quả l&agrave; hai phe đối nghịch trong Assassination kh&ocirc;ng thực sự tạo cảm gi&aacute;c rằng đ&acirc;y l&agrave; cuộc đấu tranh mang t&iacute;nh cấp b&aacute;ch giữa những người y&ecirc;u nước v&agrave; những kẻ x&acirc;m lược.</p>
+<p>Trong khi xạ thủ Ok-yoon nổi bật l&ecirc;n ho&agrave;n to&agrave;n với h&igrave;nh tượng nữ anh h&ugrave;ng mạnh mẽ, xinh đẹp v&agrave; đầy bản lĩnh th&igrave; c&aacute;c nh&acirc;n vật nam lại kh&ocirc;ng c&oacute; mấy đặc sắc. Họ đều l&acirc;m v&agrave;o t&igrave;nh trạng: xuất hiện một c&aacute;ch rất &lsquo;ngầu&rsquo; nhưng c&agrave;ng về sau c&agrave;ng nhạt nh&ograve;a dần. Một điều kh&oacute; hiểu l&agrave; tạo h&igrave;nh của hai nh&acirc;n vật Yeom v&agrave; Hawaii Pistol kh&aacute; tương đồng d&ugrave; đ&aacute;ng lẽ ra đ&acirc;y phải l&agrave; hai kẻ đối nghịch nhau. Cả hai c&oacute; c&ugrave;ng một kiểu khu&ocirc;n mặt, c&ugrave;ng một kiểu r&acirc;u, trang phục cũng tương tự nhau trong một v&agrave;i cảnh. Điều n&agrave;y l&agrave;m c&aacute;c kh&aacute;n giả chưa từng biết hai diễn vi&ecirc;n sẽ gặp đ&ocirc;i ch&uacute;t kh&oacute; khăn để ph&acirc;n biệt hai nh&acirc;n vật.</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://s3.img.edn.vn/123phim/2015/08/82152c49635648e019223df3e1a67e26.jpg" alt="" /></p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://s3.img.edn.vn/123phim/2015/08/b5adf0cb79f6c8124e75cd5aac594aae.jpg" alt="" /></p>
+<p>Quan trọng hơn cả, kế hoạch được chuẩn bị &lsquo;c&oacute; vẻ rất kỹ lưỡng&rsquo; kia h&oacute;a ra lại kết th&uacute;c một c&aacute;ch chưng hửng. M&acirc;u thuẫn giữa g&atilde; t&agrave;i phiệt v&agrave; hai c&ocirc; con g&aacute;i l&agrave; một trong những th&agrave;nh phần then chốt của cốt chuyện được x&acirc;y dựng kh&aacute; lỏng lẻo v&agrave; thiếu đi sự đau thương cần c&oacute;. Tuy vậy, những cảnh h&agrave;nh động căng thẳng xảy ra trong suốt nửa sau của phim đ&atilde; &iacute;t nhiều b&ugrave; đắp lại những thiếu s&oacute;t vừa n&ecirc;u. C&aacute;c m&agrave;n đấu s&uacute;ng, ch&aacute;y nổ đều được l&agrave;m rất tốt.</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://s3.img.edn.vn/123phim/2015/08/f59d3c1e00defc9143a59ae5d620f881.jpg" alt=""  /></p>
+<p><a href="http://www.123phim.vn/phim/877-biet-doi-sat-thu-assassination.html" target="_blank">Assassination</a> đ&atilde; kh&ocirc;ng mấy th&agrave;nh c&ocirc;ng trong c&aacute;ch truyền tải th&ocirc;ng điệp ca ngợi l&ograve;ng y&ecirc;u nước v&agrave; kh&ocirc;ng tận dụng được d&agrave;n diễn vi&ecirc;n t&agrave;i năng. Tuy vậy, với phần h&igrave;nh ảnh được đầu tư c&ocirc;ng phu v&agrave; c&aacute;c cảnh h&agrave;nh động hấp dẫn, kh&aacute;n giả vẫn c&oacute; được những ph&uacute;t gi&acirc;y kh&aacute; thư gi&atilde;n v&agrave; phần n&agrave;o hiểu về thời k&igrave; được xem l&agrave; đau thương nhất trong lịch sử H&agrave;n Quốc.</p>
+<p class="source" style="text-align: right;">123Phim</p>                   
+
+		
+		
+		
+		
+		
+		<blockquote><p>Plaid Stumptown Bespoke, Biodiesel Minim Beard High Life Incididunt Retro Sustainable 90′S Echo Park Tumblr. Photo Booth Et 8-Bit Kale Chips Proident Chillwave Deep V Laborum.</p></blockquote>
+		
+			
+			
+			
+			
+			
+		</div>
+		
+		<footer class="entry-footer post-footer">
+			<div class="row">												
+				<div class="links">
+					Share
+					<i class="fa fa-facebook-square"></i>
+				</div>
+			</div> 
+		</footer>
+    </div>
+		
+<?php $__env->stopSection(); ?>
+
+
+
+<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

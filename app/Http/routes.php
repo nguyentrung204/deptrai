@@ -127,3 +127,9 @@ Route::post('/admin/login', 'UserController@login');
 Route::get('/admin/home', function() {
     return View::make('admin_home');
 });
+
+Route::get('/admin_config', 'ConfigController@index');
+
+Route::get('/admin_edit/{id}', 'ConfigItemController@index');
+
+Route::post('/admin_edit/{id}' , 'ConfigItemController@save');

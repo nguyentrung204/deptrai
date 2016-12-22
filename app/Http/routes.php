@@ -132,7 +132,7 @@ Route::filter("checkLogin", function(){
  */
 Route::group(array("prefix"=>"admin", "before"=>"checkLogin"), function(){
 	
-});});
+});
 
 Route::get('/admin_config', 'ConfigController@index');
 

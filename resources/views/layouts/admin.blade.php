@@ -90,6 +90,8 @@
 		
 			@yield('content')
 		
-
+		<div class="overlay">
+	   	  <img id="loading" src="{{ URL::asset('public/img/loading.gif') }}" />
+	   </div>
 	</body>
 </html>

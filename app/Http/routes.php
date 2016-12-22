@@ -10,14 +10,7 @@
 |
 */
 
-/**
- * Kiểm Tra đăng nhập 
- */
-Route::filter("checkLogin", function(){
-	if (!Auth::check()) {
-       return Redirect::to('/login'); 
-    }
-});
+
 
 /**
  * Lấy thông tin người dùng 
@@ -55,10 +48,7 @@ Route::group(array('before' => 'checkLogin'), function() {
     Route::get('user/{id}', 'UserController@index');
 });
 
-/**
- * Kiểm tra đăng nhập trước những Url có prefix là "admin"
- */
-Route::group(array("prefix"=>"admin", "before"=>"checkLogin"), function(){});
+
 
 /**
  * Đăng nhập với facebook
@@ -124,9 +114,25 @@ Route::get('/admin/login', function() {
 
 Route::post('/admin/login', 'UserController@login');
 
-Route::get('/admin/home', function() {
+Route::get('/admin/home', array('before'=>'checkLogin',   function() {
     return View::make('admin_home');
+}));
+
+/**
+ * Kiểm Tra đăng nhập 
+ */
+Route::filter("checkLogin", function(){
+	if (!Auth::check()) {
+       return Redirect::to('/admin/login'); 
+    }
 });
+
+/**
+ * Kiểm tra đăng nhập trước những Url có prefix là "admin"
+ */
+Route::group(array("prefix"=>"admin", "before"=>"checkLogin"), function(){
+	
+});});
 
 Route::get('/admin_config', 'ConfigController@index');
 

@@ -13,6 +13,22 @@ body {
     padding: 0;
 }
 
+.btn:focus {
+  outline: none;
+}
+
+* {
+	outline: none;
+}
+
+*:focus {
+	outline: none;
+}
+
+:focus {
+	outline: none;
+}
+
 ol, ul {
 	list-style: none;
 	padding:0px;
@@ -649,4 +665,104 @@ figure {
 figure:hover+span {
     bottom: -36px;
     opacity: 1;
+}
+
+#sayhi {
+	text-transform: uppercase;
+	font-size: 12px !important;
+}
+
+#sayhi span {
+	color: #4475a0;
+}
+
+#adminPage nav {
+	font-size: 12px !important;
+}
+
+#adminPage  nav .dropdown.open a {
+	font-size: 12px !important;
+}
+
+#adminPage  #title {
+	background: #fff;
+	color: #7f8789;
+	font-size: 30px;
+	padding: 17px 0px;
+	margin-top: -15px;
+}
+
+#adminPage  #registerCt {
+	background: #fff;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+	margin-top: 20px;
+	padding: 30px;
+}
+
+#adminPage  #registerCt input {
+	border: 1px solid #e6e6e6;
+	padding: 10px;
+	width: 100%;
+}
+
+#adminPage  #date-icon {
+	padding: 13px;
+	border-color: #e6e6e6;
+}
+
+#adminPage  .input-group-addon {
+	border-color: #e6e6e6;
+}
+
+#adminPage  .input-group-btn {
+	width: 100%;
+}
+
+#adminPage  .btn-default {
+	border-color: #e6e6e6;
+}
+
+#adminPage  .regist-btn {
+	margin-top: 40px;
+}
+
+#adminPage  .error {
+	color: #f26520;
+	font-weight: normal;
+	font-style: italic;
+}
+
+#adminPage  input.error{
+	border: 1px dashed #f26520 !important;
+	border-radius: 3px;
+	font-style: normal;
+}
+
+#adminPage  input.valid{
+	border: 1px dashed #8dc53e !important;
+	border-radius: 3px;
+	font-style: normal;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(255,255,255); /* Black fallback color */
+    background-color: rgba(255,255,255, 0.9); /* Black w/opacity */
+    width: 100%;
+    opacity: 0.7;
+}
+
+#adminPage  #loading {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	
 }

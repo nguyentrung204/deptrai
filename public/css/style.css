@@ -810,3 +810,21 @@ label.error {
 	
 }
 
+.img-all-ct {
+	position: relative;
+	height: 196px;
+}
+
+.img-ct {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+input[readonly] {
+	background: #f2f3f5;
+}
+

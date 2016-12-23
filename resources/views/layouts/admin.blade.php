@@ -24,13 +24,14 @@
 		<script type="text/javascript" src="{{ URL::asset('public/js/jquery.validate.min.js') }}"></script>
 		
 		<script src="{{ URL::asset('public/bootstrap/js/bootstrap.min.js') }}"></script>
+		<script src="{{ URL::asset('public/js/coreRequest.js') }}"></script>
 		<script src="{{ URL::asset('public/js/script.js') }}"></script>
 		
 		
 		
 <script type="text/javascript" src="{{ URL::asset('public/js/bootstrap-datetimepicker.min.js') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('public/js/i18n/grid.locale-ja.js') }}"></script>
-<script type="text/javascript" src="{{ URL::asset('public/js/validator/register.js ') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('public/js/validator/register_work.js ') }}"></script>
 		
 		@yield('js')
 
@@ -90,7 +91,7 @@
 		
 			@yield('content')
 		
-		<div class="overlay">
+		<div class="overlay" style="display:none;">
 	   	  <img id="loading" src="{{ URL::asset('public/img/loading.gif') }}" />
 	   </div>
 	</body>

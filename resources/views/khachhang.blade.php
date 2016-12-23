@@ -38,8 +38,8 @@ Sau đây là một số ý kiến khách hàng sử dụng dịch vụ của ch
 			<li class=" col-lg-6 col-md-12">
 			<div class="cus clearfix">
 			   <div class="avatar col-lg-5">
-					<div class="img-ct">
-						<img src="{{ URL::asset('public/img/khachhang/SD001.jpg') }}" />
+					<div class="img-all-ct" ><div class="img-ct">
+						<img src="{{ URL::asset('public/img/khachhang/SD001.jpg') }}" /></div>
 					</div>
 					<div class="info text-center">
 						<span class="name"><b class=""> Nguyễn Văn Long </b></span>
@@ -58,8 +58,8 @@ Sau đây là một số ý kiến khách hàng sử dụng dịch vụ của ch
 			<li class=" col-lg-6 col-md-12">
 			<div class="cus clearfix">
 			   <div class="avatar col-lg-5">
-					<div class="img-ct">
-						<img src="{{ URL::asset('public/img/khachhang/SD004.jpg') }}" width="190" />
+					<div class="img-all-ct" ><div class="img-ct">
+						<img src="{{ URL::asset('public/img/khachhang/SD004.jpg') }}" width="190" /></div>
 					</div>
 					<div class="info text-center">
 						<span class="name"><b class=""> (Mr). Nguyen Tien Dung </b></span>
@@ -78,8 +78,8 @@ Sau đây là một số ý kiến khách hàng sử dụng dịch vụ của ch
 			<li class=" col-lg-6 col-md-12">
 			<div class="cus clearfix">
 			   <div class="avatar col-lg-5">
-					<div class="img-ct">
-						<img src="{{ URL::asset('public/img/khachhang/SD005.png') }}" />
+					<div class="img-all-ct" ><div class="img-ct">
+						<img src="{{ URL::asset('public/img/khachhang/SD005.png') }}" /></div>
 					</div>
 					<div class="info text-center">
 						<span class="name"><b class=""> Ông Nguyễn Đông Thương </b></span>
@@ -98,8 +98,8 @@ Sau đây là một số ý kiến khách hàng sử dụng dịch vụ của ch
 			<li class="col-lg-6 col-md-12">
 			   <div class="cus clearfix">
 			   <div class="avatar col-lg-5">
-					<div class="img-ct">
-						<img src="{{ URL::asset('public/img/khachhang/SD007.jpg') }}" />
+					<div class="img-all-ct" ><div class="img-ct">
+						<img src="{{ URL::asset('public/img/khachhang/SD007.jpg') }}" /></div>
 					</div>
 					<div class="info text-center">
 						<span class="name"><b class=""> (Bạn). Nguyễn T.Thanh.Thảo </b></span>
@@ -118,8 +118,8 @@ Sau đây là một số ý kiến khách hàng sử dụng dịch vụ của ch
 			<li class="col-lg-6 col-md-12">
 			   <div class="cus clearfix">
 			   <div class="avatar col-lg-5">
-					<div class="img-ct">
-						<img src="{{ URL::asset('public/img/khachhang/SD009.jpg') }}" />
+					<div class="img-all-ct" ><div class="img-ct">
+						<img src="{{ URL::asset('public/img/khachhang/SD009.jpg') }}" /></div>
 					</div>
 					<div class="info text-center">
 						<span class="name"><b class=""> (Bà). Đỗ Thu Thủy </b></span>
@@ -138,8 +138,8 @@ Sau đây là một số ý kiến khách hàng sử dụng dịch vụ của ch
 			<li class="col-lg-6 col-md-12">
 			   <div class="cus clearfix">
 			   <div class="avatar col-lg-5">
-					<div class="img-ct">
-						<img src="{{ URL::asset('public/img/khachhang/SD010.jpg') }}" />
+					<div class="img-all-ct" ><div class="img-ct">
+						<img src="{{ URL::asset('public/img/khachhang/SD010.jpg') }}" /></div>
 					</div>
 					<div class="info text-center">
 						<span class="name"><b class=""> (Anh). Trần Hải Nam </b></span>

@@ -13,72 +13,194 @@ $(document).ready(function() {
 		    "Please enter phone in the format!"
 	);
 	
+	$.validator.addMethod("checkSalary",
+		    function(value, element) {
+				if($('input[name=salaryType]:checked').val() == 1) {
+					if ($.trim(value) == '') {
+						return false;
+					}
+				} 
+		        return true;
+		    },
+		    "Please enter phone in the format!"
+	);
+	
+	$.validator.addMethod("checkNoneSalary",
+		    function(value, element) {
+				if($('input[name=salaryType]:checked').val() == 0) {
+					if ($.trim(value) == '') {
+						return false;
+					}
+				} 
+		        return true;
+		    },
+		    "Please enter phone in the format!"
+	);
+	
+	$.validator.addMethod("checkIdCustomer",
+		    function(value, element) {
+				if($('input[name=registed]').is(':checked')) {
+					if ($.trim(value) == '') {
+						return false;
+					}
+				} 
+		        return true;
+		    },
+		    "Please enter phone in the format!"
+	);
+	
+	$.validator.addMethod("checkCustomer",
+		    function(value, element) {
+				if(!$('input[name=registed]').is(':checked')) {
+					if ($.trim(value) == '') {
+						return false;
+					}
+				} 
+		        return true;
+		    },
+		    "Please enter phone in the format!"
+	);
+	
+	
+	
+	
+	
 	$("#registerForm").validate({
 	  rules: {
 	    title: {
 	    	required: true,
 	    	maxlength: 200 
 	    },
-		salaryfrom : {
-			required: true,
-			maxlength: 200 
-		}
-		
-	    sex: {
-	        required: true,
-	        number: true,
-	        maxlength: 1
+		salaryFrom : {
+			checkSalary: true,
+			maxlength: 50,
+			number: true
+		},
+		salaryTo : {
+			maxlength: 50,
+			number: true
+		},
+	    currency: {
+	        checkSalary: true,
+	        maxlength: 10
 	    },
+		noneSalary: {
+			checkNoneSalary: true,
+			maxlength: 200
+		},
+		addressWork : {
+			required: true,
+			maxlength: 200
+		},
 	    workDate: {
-	        required: true,
+	        required: false,
 	        dateFormat: true
 	    },
+		age: {
+			required: false,
+			digits: true
+		},
+		totalPerson: {
+			required: false,
+			digits: true
+		},
+		path: {
+			required: true
+		},
+		idcustomer: {
+			checkIdCustomer: true
+		},
+		customername: {
+			checkCustomer : true,
+	        maxlength: 200
+		},
 	    address: {
-	        required: true,
+			checkCustomer : true,
 	        maxlength: 200
 	    },
 	    email: {
-	        required: true,
-	        email: true 
+	        checkCustomer : true,
+	        email: true,
+			maxlength: 100
 	    },
 	    phone: {
-	        required: true,
-	        phoneFormat: true
+	        checkCustomer : true,
+			maxlength: 20
 	    },
-	    department: {
+		decription: {
+			required: true,
+			maxlength: 200
+		},
+	    content: {
 	    	required: true,
-	    	number: true
+			maxlength: 3000
 	    }
 	  },
 	 messages: {
-		name: {
-			required: "Vui lòng nhập Họ & Tên",
-			maxlength: "Họ & Tên không nhập quá 200 ký tự", 
+		title: {
+	    	required: "Vui lòng nhập Tiêu đề",
+	    	maxlength: "Chỉ cho phép nhập Tiêu đề dưới 200 ký tự" 
 	    },
-	    sex: {
-	        required: "Vui lòng chọn Giới tính",
-	        number: "Kiễu Giới tính không chính xác",
-	        maxlength: "Giới tính không chính xác"
+		salaryFrom : {
+			checkSalary: "Vui lòng nhập Giá từ",
+			maxlength: "Chỉ cho phép nhập Giá từ dưới 50 ký tự",
+			number: "Giá từ phải là số"
+		},
+		salaryTo : {
+			maxlength: "Chỉ cho phép nhập Giá đến dưới 50 ký tự",
+			number: "Giá đến phải là số"
+		},
+	    currency: {
+	        checkSalary: "Vui lòng chọn Đơn vị tiền tệ",
+	        maxlength: "Chỉ chấp nhận Đơn vị tiền tệ dưới 10 ký tự"
 	    },
-	    birthday: {
-	        required: "Vui lòng nhập Ngày sinh",
-	        dateFormat: "Ngày sinh phải theo định dạng dd/MM/yyyy",
+		noneSalary: {
+			checkNoneSalary: "Vui lòng nhập mô tả cho giá thành",
+			maxlength: "Chỉ cho phép nhập mô tả dưới 200 ký tự"
+		},
+		addressWork : {
+			required: "Vui lòng nhập Địa chỉ nơi làm việc",
+			maxlength: "Chỉ cho phép nhập Địa chỉ dưới 200 ký tự"
+		},
+	    workDate: {
+	        dateFormat: "Vui lòng nhập Ngày làm việc đúng định dạng"
 	    },
+		age: {
+			required: "Vui lòng nhập Độ tuổi làm việc"
+		},
+		totalPerson: {
+			digits: "Số lượng người phải là số"
+		},
+		path: {
+			required: "Vui lòng nhập Url hình ảnh cho bài viết"
+		},
+		idcustomer: {
+			checkIdCustomer: "Vui lòng nhập ID Khách hàng"
+		},
+		customername: {
+			checkCustomer : "Vui lòng nhập Tên Khách hàng",
+	        maxlength: "Chỉ cho phép nhập Tên Khách hàng dưới 200 ký tự"
+		},
 	    address: {
-	        required: "Vui lòng nhập Thường trú",
-	        maxlength: "Thường trú không nhập quá 200 ký tự", 
+			checkCustomer : "Vui lòng nhập Địa chỉ",
+	        maxlength: "Chỉ cho phép nhập Địa chỉ dưới 200 ký tự"
 	    },
 	    email: {
-	        required: "Vui lòng nhập Địa chỉ mail",
-	        email: "Địa chỉ mail không đúng định dạng" 
+	        checkCustomer : "Vui lòng nhập Email",
+	        email: "Vui lòng nhập đúng định dạng Email",
+			maxlength: "Chỉ cho phép nhập Email dưới 100 ký tự"
 	    },
 	    phone: {
-	        required: "Vui lòng nhập Số điện thoại",
-	        phoneFormat: "Vui lòng nhập số điện thoại theo định dạng 1234-567-890"  
+	        checkCustomer : "Vui lòng nhập Số điện thoại",
+			maxlength: "Chỉ cho phép nhập Số điện thoại dưới 20 ký tự"
 	    },
-	    department: {
-	    	required: "Vui lòng chọn Phòng ban",
-	    	number: "Phòng ban không chính xác", 
+		decription: {
+			required: "Vui lòng nhập Mô tả cho bài viết",
+			maxlength: "Chỉ cho phép nhập nội dung dưới 200 ký tự"
+		},
+	    content: {
+	    	required: "Vui lòng nhập Nội dung bài viết",
+			maxlength: "Chỉ cho phép nhập nội dung dưới 3000 ký tự"
 	    }
 	 },
 	 errorPlacement: function(error, element) {

@@ -139,3 +139,6 @@ Route::get('/admin_config', 'ConfigController@index');
 Route::get('/admin_edit/{id}', 'ConfigItemController@index');
 
 Route::post('/admin_edit/{id}' , 'ConfigItemController@save');
+
+Route::post('/admin/job/insert' , 'JobController@save');
+

@@ -18,7 +18,7 @@
 	
 		<form id="registerForm" name="registerForm" method="post">
 			<div class="form-group">
-			    <label id="title-error" class="error" for="title"></label>
+			    <label id="title-error" class="error" for="name"></label>
 				<input type="text"  id="name" name="title" placeholder="Tiêu đề">
 			</div>
 			
@@ -41,17 +41,16 @@
 			
 			
 
-			
+			<label id="salaryFrom-error" class="error " for="salaryFrom"></label>
+			<label id="salaryTo-error" class="error" for="salaryTo"></label>
 			<div class="form-inline form-group">
 				<div class="form-group">
-					<label id="salaryfrom-error" class="error " for="salaryfrom"></label>
-					<input type="text"  id="salaryfrom" class="salaryInput" name="salaryfrom" placeholder="Giá từ">
+					
+					<input type="text"  id="salaryFrom" class="salaryInput" name="salaryFrom" placeholder="Giá từ">
 				</div>
 				<div class="form-group">
-					<label id="salaryto-error" class="error" for="salaryto"></label>
-					<input type="text"  id="salaryto" class="salaryInput" name="salaryto" placeholder="~ đến">
+					<input type="text"  id="salaryTo" class="salaryInput" name="salaryTo" placeholder="~ đến">
 				</div>
-				
 			</div>
 			
 			<div class="form-group">
@@ -77,7 +76,7 @@
 			
 			<div class="form-group">
 			    <label id="noneSalary-error" class="error" for="noneSalary"></label>
-				<input type="text"  id="noneSalary" class="disabled" disabled name="noneSalary" placeholder="Thoả thuận, Không công,...">
+				<input type="text"  id="noneSalary" class="disabled" readonly name="noneSalary" placeholder="Thoả thuận, Không công,...">
 			</div>
 			
 			<div class="form-group">
@@ -88,7 +87,7 @@
             <div class="form-group">
 	            <label id="workDate-error" class="error workDate-error" for="workDate"></label>
 			  	<div class="input-group date" id="datetimepicker2">
-			    	<input type="text"  id="birthday" name="workDate"  placeholder="Ngày có thể làm việc">
+			    	<input type="text"  id="workDate" name="workDate"  placeholder="Ngày có thể làm việc">
 			  		<span class="input-group-addon">
 		        		<i class="fa fa-calendar" aria-hidden="true"></i>
 		      		</span>
@@ -101,8 +100,8 @@
 		  	</div>
 			
 			<div class="form-group">
-		  		<label id="totalperson-error" class="error" for="totalperson"></label>
-		    	<input type="text"  id="totalperson" name="totalperson" placeholder="Số lượng người cần tuyển (Vui lòng nhập số, ví dụ: 5 hoặc 5~10)">
+		  		<label id="totalPerson-error" class="error" for="totalPerson"></label>
+		    	<input type="text"  id="totalPerson" name="totalPerson" placeholder="Số lượng người cần tuyển (Vui lòng nhập số, ví dụ: 5 hoặc 5~10)">
 		  	</div>
 			
 			<div class="form-group">
@@ -131,7 +130,7 @@
 				<label id="idcustomer-error" class="error" for="idcustomer"></label>
 			    <div class="input-group">
 			      <div class="input-group-addon"><i class="fa fa-handshake-o" aria-hidden="true"></i></div>
-				  <input type="text"  id="idcustomer" class="disabled" disabled name="idcustomer" placeholder="ID Khách hàng (hoặc Số điện thoại)">
+				  <input type="text"  id="idcustomer" class="disabled" readonly name="idcustomer" placeholder="ID Khách hàng (hoặc Số điện thoại)">
 			    </div>
 			  </div>
 			
@@ -169,15 +168,23 @@
 		    	<input type="text"  id="phone" name="phone" class="registInput" placeholder="Số điện thoại">
 			    </div>
 			  </div>
+			  <div class="form-group">
+				<label id="decription-error" class="error" for="decription"></label>
+				<div class="input-group">
+				<input type="text"  id="decription" name="decription"  placeholder="Nhập Mô tả vào đây">
+                </div>
+			
 			<div class="form-group">
-				
-				<textarea name="editor1" id="editor1" rows="10" cols="80" placeholder="Nhập nội dụng vào đây">
-                
+				<label id="content-error" class="error" for="content"></label>
+				<div class="input-group">
+				<textarea name="content" id="content" rows="10" cols="80" placeholder="Nhập nội dụng vào đây">
+                </div>
 				</textarea>
+				<input type="hidden" name="_token" value="{{ csrf_token() }}">
 			 <script>
                 // Replace the <textarea id="editor1"> with a CKEditor
                 // instance, using default configuration.
-                CKEDITOR.replace( 'editor1' );
+                CKEDITOR.replace( 'content' );
             </script>
 			</div>
 		

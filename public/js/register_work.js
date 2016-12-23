@@ -1,17 +1,17 @@
 $( document ).ready(function() {
 	
-	$('#datetimepicker2').datetimepicker({
+		$('#datetimepicker2').datetimepicker({
 			locale: 'vi',
 			format: 'DD/MM/YYYY'
 		});
 		
 		$('input[name=registed]').off('click').on('click', function() {
 			if($('input[name=registed]').is(':checked')) {
-				$(".registInput").addClass('disabled').prop('disabled', true);
-				$("#idcustomer").removeClass('disabled').prop('disabled', false);
+				$(".registInput").addClass('disabled').prop('readonly', true);
+				$("#idcustomer").removeClass('disabled').prop('readonly', false);
 			} else {
-				$(".registInput").removeClass('disabled').prop('disabled', false);
-				$("#idcustomer").addClass('disabled').prop('disabled', true);
+				$(".registInput").removeClass('disabled').prop('readonly', false);
+				$("#idcustomer").addClass('disabled').prop('readonly', true);
 			}
 		});
 		
@@ -19,11 +19,11 @@ $( document ).ready(function() {
 		
 		$('input[name=salaryType]').off('click').on('click', function() {
 			if($('input[name=salaryType]:checked').val() == 1) {
-				$(".salaryInput").removeClass('disabled').prop('disabled', false);
-				$("#noneSalary").addClass('disabled').prop('disabled', true);
+				$(".salaryInput").removeClass('disabled').prop('readonly', false);
+				$("#noneSalary").addClass('disabled').prop('readonly', true);
 			} else {
-				$(".salaryInput").addClass('disabled').prop('disabled', true);
-				$("#noneSalary").removeClass('disabled').prop('disabled', false);
+				$(".salaryInput").addClass('disabled').prop('readonly', true);
+				$("#noneSalary").removeClass('disabled').prop('readonly', false);
 			}
 		});
 		
@@ -57,9 +57,12 @@ $( document ).ready(function() {
 								field) {
 							data[field.name] = field.value;
 						});
+						
+						data.content = CKEDITOR.instances.content.getData();
 
 						if ($('#registerForm').valid()) {
-							$.ajaxSend("register", data, function(result) {
+							console.log(data);
+							$.ajaxSend("deptrai/admin/job/insert", data, function(result) {
 								if (result.error) {
 									if (result.data.model != null) {
 										if (result.data.model.type == 'application-error') {

@@ -19,12 +19,12 @@ $(function () {
 
 
 <div style="padding: 2px 3px;">
-  <video width="100%" controls>
-	  <source src="<?php echo e(URL::asset('/public/video/videohome.mp4')); ?>" type="video/mp4">
-	  
-	Your browser does not support the video tag.
-	</video>
-	
+  <?php /*<video width="100%" controls>*/ ?>
+	  <?php /*<source src="<?php echo e(URL::asset('/public/video/videohome.mp4')); ?>" type="video/mp4">*/ ?>
+	  <?php /**/ ?>
+	<?php /*Your browser does not support the video tag.*/ ?>
+	<?php /*</video>*/ ?>
+	<img width="100%" src="<?php echo e(URL::asset('/public/img/Exodus2.jpg')); ?>">
 	
   </div>  
   

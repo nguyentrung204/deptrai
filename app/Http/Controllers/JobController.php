@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use Facebook, Input, Auth;
-use App\Models\Profile;
 use App\Models\Config;
-use App\Models\User;
+use App\Models\Job;
+use App\Models\Customer;
  use Hash;
  use Validator;
  use Redirect;
+use DB;
+use DateTime;
 
 /**
  * @Author: NNTrung
@@ -19,10 +21,7 @@ class JobController extends Controller  {
 	
 	
 	public function save(){
-		
-		
-		
-		
+
 			// create our user data for the authentication
 			$job = array(
 				'title'     => Input::get('title'),
@@ -37,12 +36,27 @@ class JobController extends Controller  {
 				'totalPerson'  => Input::get('totalPerson'),
 				'path'  => Input::get('path'),
 				'idcustomer'  => Input::get('idcustomer'),
-				'decription'  => Input::get('decription'),
+				'description'  => Input::get('description'),
 				'content'  => Input::get('content'),
 				'registed' => Input::get('registed')
 			);
+
+		DB::transaction(function () {
+		$profile = new Job();
+		$customer = new Customer();
+			if (Input::get('registed') != 1) {
+
+				$customer->name = Input::get('customername');
+				$customer->address = Input::get('address');
+				$customer->email = Input::get('email');
+				$customer->save();
+				$profile->idcustomer  = $customer->id;
+			} else {
+				$profile->idcustomer  = Input::get('idcustomer');
+			}
+
 			
-			$profile = new Profile();
+
 			$profile->title     = Input::get('title');
 			$profile->isSalary  = Input::get('isSalary');
 			$profile->salaryFrom = Input::get('salaryFrom');
@@ -51,18 +65,43 @@ class JobController extends Controller  {
 			$profile->noneSalary  = Input::get('noneSalary');
 			$profile->address  = Input::get('addressWork');
 			$profile->workDate = Input::get('workDate');
+		$profile->workEndDate = Input::get('workEndDate');
 			$profile->age  = Input::get('age');
 			$profile->totalPerson  = Input::get('totalPerson');
 			$profile->path = Input::get('path');
-			$profile->idcustomer  = Input::get('idcustomer');
-			$profile->decription  = Input::get('decription');
+
+			$profile->description  = Input::get('description');
 			$profile->content = Input::get('content');
-			$profile->registed = Input::get('registed');
+
+
+		$profile->created_at = new DateTime();
+		$profile->updated_at = new DateTime();
+		$profile->createUser = Auth::User()->id;
+		$profile->updateUser = Auth::User()->id;
 			$profile->save();
-			
-			
+
+		}, 5);
+
+		return response()
+			->json(['error' => false]);
+
 		
 	}
 	
-	
+	public function getList() {
+		$job = $this->search(0);
+		return view('tuyendung', ['jobList' => $job, 'menu' => 'tuyendung']);
+	}
+
+	public function getListAjax() {
+		$offset  = Input::get('offset');
+		$job = search($offset);
+		return response()
+			->json(['jobList' => $job]);
+	}
+
+	private function search ($offset) {
+		$job = DB::select('SELECT job.*, account.name FROM job LEFT JOIN account ON job.createUser = account.id LIMIT 2 OFFSET ?', [$offset]);
+		return $job;
+	}
 }

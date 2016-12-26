@@ -32,38 +32,36 @@
 		@yield('js')
 
 	</head>
-	
-	<nav class="navbar navbar-project1 navbar-fixed-top">
-	  <div class="container container-header">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="wrapper-container header-z">
-		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		  </button>
-		   <a class="navbar-brand" href="/deptrai"><img id="logo" src="{{ URL::asset('public/img/unnamed.png') }} "</a>
-		</div>
-		
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse main-menu navbar-collapse navbar-right navbar-bt" id="bs-example-navbar-collapse-1">
-		  <ul class="nav navbar-nav">
-			  <li menu="trangchu"><a href="/deptrai">TRANG CHỦ<span class="sr-only">(current)</span></a></li>
-			  <li menu="gioithieu"><a href="/deptrai/gioithieu">GIỚI THIỆU</a></li>
-			  <li menu="dichvu"><a href="/deptrai/hinhanh">DỊCH VỤ</a></li>
-			  <li menu="khachhang"><a href="/deptrai/khachhang">KHÁCH HÀNG</a></li>
-			  <li menu="baogia"><a href="/deptrai">BÁO GIÁ</a></li>
-			  <li menu="tuyendung"><a href="/deptrai/tuyendung">TUYỂN DỤNG</a></li>
-			  <li menu="lienhe"><a href="/deptrai/lienhe">LIÊN HỆ</a></li>
-		  </ul>
-		 
-		 
-		 
-		
-		</div><!-- /.navbar-collapse -->
-	  </div><!-- /.container-fluid -->
+
+	<nav class="navbar navbar-default navbar-project1">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a id="sayhi" class="navbar-brand" href="#"><img id="logo" src="{{ URL::asset('public/img/unnamed.png') }} "/></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-bt" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li menu="trangchu"><a href="/deptrai">TRANG CHỦ<span class="sr-only">(current)</span></a></li>
+					<li menu="gioithieu"><a href="/deptrai/gioithieu">GIỚI THIỆU</a></li>
+					<li menu="dichvu"><a href="/deptrai/hinhanh">DỊCH VỤ</a></li>
+					<li menu="khachhang"><a href="/deptrai/khachhang">KHÁCH HÀNG</a></li>
+					<li menu="tuyendung"><a href="/deptrai/tuyendung">TUYỂN DỤNG</a></li>
+					<li menu="lienhe"><a href="/deptrai/lienhe">LIÊN HỆ</a></li>
+
+
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
 	</nav>
+
 	<body>
 	   
 	    

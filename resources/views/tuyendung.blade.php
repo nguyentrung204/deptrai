@@ -7,7 +7,7 @@
 
 @section('js')
 
-<script src="{{ URL::asset('public/js/post_list.js') }}"></script>
+	<script src="{{ URL::asset('public/js/tuyendung.js') }}"></script>
 
 <script>
 
@@ -29,10 +29,10 @@ $(function () {
       <div class="container">
         <div class="col-xs-12">
           <br><br>
-          <h2>Chúng tôi đang có <mark>1,256</mark> công việc ngay bây giờ !</h2>
+          <h2>Chúng tôi đang có <mark>567</mark> công việc ngay bây giờ !</h2>
           <h5 class="font-alt">Hãy tìm công việc phù hợp với bạn</h5>
           <br><br><br>
-          <form class="header-job-search">
+          <form class="header-job-search hidden-xs">
             <div class="input-keyword">
               <input type="text" class="form-control" placeholder="Tên việc, lĩnh vực">
             </div>
@@ -45,6 +45,19 @@ $(function () {
               <button class="btn" type="submit">Tìm việc</button>
             </div>
           </form>
+			<form class="header-job-search-xs visible-xs-block">
+				<div class="col-xs-12 input-keyword">
+					<input type="text" class="form-control" placeholder="Tên việc, lĩnh vực">
+				</div>
+
+				<div class="col-xs-12 input-location">
+					<input type="text" class="form-control" placeholder="Địa điểm, huyện, tỉnh, quận, thành phố">
+				</div>
+
+				<div class="col-xs-12 btn-search">
+					<button class="btn" type="submit">Tìm việc</button>
+				</div>
+			</form>
         </div>
 
       </div>
@@ -57,80 +70,49 @@ $(function () {
   
 <div id="tuyendung" style="padding: 10px 20px;">
      <ul class="row">
-	
-	 
-		<li class="item col-md-12">
-			<div class="col-md-3">
-				<img src="{{ URL::asset('public/img/tuyendung/TD001.png') }}" class="img-thumbnail" alt="Cinque Terre" width="247" >
+
+		 <?php for ($x = 0; $x < count($jobList); $x++) { ?>
+		<li class="item col-md-12 clearfix">
+			<div class="col-md-3 col-sm-12 text-center">
+				<img src="<?php echo $jobList[$x]->path ?>" class="img-thumbnail" alt="Cinque Terre" width="100%" >
 			</div>
-			<div class="col-md-9">
-			 <div class="info clearfix">
+			<div class="col-md-9 col-sm-12 clearfix  ">
+			 <div class="info clearfix hidden-sm hidden-xs">
 				  <div class="col-md-6">
-				  <i class="fa fa-calendar-check-o " aria-hidden="true"></i> <span class="date">Ngày đăng: 09/12/2017</span>
+				  <i class="fa fa-calendar-check-o " aria-hidden="true"></i> <span class="date">Ngày đăng: <?php $date = new DateTime($jobList[$x]->created_at);echo $date->format('d/m/Y') ?></span>
 				  </div>
 				  <div class="col-md-6 text-right">
-				  <i class="fa fa-user-o" aria-hidden="true"></i> <span class="user">Người đăng: Nguyễn Ngọc Trung</span>
+				  <i class="fa fa-user-o" aria-hidden="true"></i> <span class="user">Người đăng: <?php echo $jobList[$x]->name ?></span>
 				  </div>
 			   </div>
 			
-			   <div class="title">Tuyển 5 Nhân Viên Lau Dọn Văn Phòng (Mới)</div>
-			   <div class="map"><i class="fa fa-map-marker" aria-hidden="true"></i> Tại Quận 3, TP.Hồ Chí Minh</div>
-			   <div class="money"><i class="fa fa-usd" aria-hidden="true"></i> 500.000 ~ 1.500.000 VNĐ</div>
+			   <div class="title"><?php echo $jobList[$x]->title ?></div>
+			   <div class="map"><i class="fa fa-map-marker" aria-hidden="true"></i> <?php echo $jobList[$x]->address ?></div>
+			   <div class="money"><i class="fa fa-usd" aria-hidden="true"></i>
+				   <?php
+				   	if ($jobList[$x]->isSalary != '1') {
+						echo $jobList[$x]->noneSalary;
+					}else {
+						if ($jobList[$x]->salaryTo != 0) {
+				    		echo number_format($jobList[$x]->salaryFrom) . ' ~ ' .  number_format($jobList[$x]->salaryTo) . ' ' .  $jobList[$x]->currency;
+						} else {
+							echo number_format($jobList[$x]->salaryFrom) . ' ' .  $jobList[$x]->currency;
+						}
+					}
+				   ?>
+
+			   </div>
+				<div class="money visible-sm-block visible-xs-block"><i class="fa fa-calendar-check-o " aria-hidden="true"></i> <span class="date">Ngày đăng: <?php echo $jobList[$x]->created_at ?></span></div>
+				<div class="money visible-sm-block visible-xs-block"><i class="fa fa-user-o" aria-hidden="true"></i><span class="user"> Người đăng: <?php echo $jobList[$x]->name ?></span></div>
 			   
 			   
 			   <div class="description">
-					Không cần kinh nghiệm, có sức khỏe, trung thực, siêng năng, có ý thức kỉ luật tốt, có giấy tờ tùy thân đầy đủ. Cam kết thời gian làm việc đến Tết ( làm đến 27 tháng 12 âm lịch), nếu không đủ thời gian cam kết sẽ không được nhận đủ lương.
+				   <?php echo $jobList[$x]->description ?>
 			   </div>
 			</div>
 		</li>
-		<li class="item col-md-12">
-			<div class="col-md-3">
-				<img src="{{ URL::asset('public/img/tuyendung/TD002.jpg') }}" class="img-thumbnail" alt="Cinque Terre" width="247" >
-			</div>
-			<div class="col-md-9">
-				<div class="info clearfix">
-				  <div class="col-md-6">
-				  <i class="fa fa-calendar-check-o " aria-hidden="true"></i> <span class="date">Ngày đăng: 09/12/2017</span>
-				  </div>
-				  <div class="col-md-6 text-right">
-				  <i class="fa fa-user-o" aria-hidden="true"></i> <span class="user">Người đăng: Quốc Tự Giám</span>
-				  </div>
-			   </div>
-			
-			   <div class="title">Tuyển Nhân Viên Trang Trí Cửa Tiệm (Cần gấp)</div>
-			   <div class="map"><i class="fa fa-map-marker" aria-hidden="true"></i> Tại Quận 10, TP.Hồ Chí Minh</div>
-			   <div class="money"><i class="fa fa-usd" aria-hidden="true"></i> 100.000 ~ 700.000 VNĐ</div>
-			   
-			   
-			   <div class="description">
-					Không cần kinh nghiệm, có sức khỏe, trung thực, siêng năng,  Cam kết thời gian làm việc đến Tết ( làm đến 27 tháng 12 âm lịch), nếu không đủ thời gian cam kết sẽ không được nhận đủ lương.
-			   </div>
-			</div>
-		</li>
-		<li class="item col-md-12">
-			<div class="col-md-3">
-				<img src="{{ URL::asset('public/img/tuyendung/TD003.jpg') }}" class="img-thumbnail" alt="Cinque Terre" width="247" >
-			</div>
-			<div class="col-md-9">
-			   <div class="info clearfix">
-				  <div class="col-md-6">
-				  <i class="fa fa-calendar-check-o " aria-hidden="true"></i> <span class="date">Ngày đăng: 09/12/2017</span>
-				  </div>
-				  <div class="col-md-6 text-right">
-				  <i class="fa fa-user-o" aria-hidden="true"></i> <span class="user">Người đăng: Đào Duy Phúc</span>
-				  </div>
-			   </div>
-			
-			   <div class="title">Tuyển Giúp Việc Cho Người Già (Bao cơm & Chỗ ăn ở) </div>
-			   <div class="map"><i class="fa fa-map-marker" aria-hidden="true"></i> Tại Quận Tân Bình, TP.Hồ Chí Minh</div>
-			   <div class="money"><i class="fa fa-usd" aria-hidden="true"></i> 5.000.000 VNĐ</div>
-			   
-			   
-			   <div class="description">
-					Không cần kinh nghiệm, có sức khỏe, trung thực, siêng năng, có ý thức kỉ luật tốt, có giấy tờ tùy thân đầy đủ.gian làm việc đến Tết ( làm đến 27 tháng 12 âm lịch)
-			   </div>
-			</div>
-		</li>
+		 <?php } ?>
+
 	 </ul>
 	 <div id="readmore" class="text-center">
 		<button type="button" class="btn btn-default"><i class="fa fa-angle-double-down fa-lg" aria-hidden="true"></i> &nbsp Xem thêm nhiều việc khác nữa ... </button>

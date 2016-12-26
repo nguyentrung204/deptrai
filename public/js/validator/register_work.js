@@ -60,6 +60,26 @@ $(document).ready(function() {
 		    },
 		    "Please enter phone in the format!"
 	);
+
+	$.validator.addMethod("checkDateFromTo",
+		function(value, element) {
+			if($.trim(value) != '') {
+				var d = value.split("/");
+				var k = $('#workDate').val().split("/");
+
+				var to = new Date(d[1] + '/' + d[0] + "/" + d[2]);
+				var from =   new Date(k[1] + '/' + k[0] + "/" + k[2]);
+
+				if (from > to) {
+					return false;
+				}
+			}
+			return true;
+		},
+		"Please enter phone in the format!"
+	);
+
+
 	
 	
 	
@@ -93,9 +113,13 @@ $(document).ready(function() {
 			maxlength: 200
 		},
 	    workDate: {
-	        required: false,
+
 	        dateFormat: true
 	    },
+		  workEndDate : {
+			  checkDateFromTo : true,
+			  dateFormat: true
+		  },
 		age: {
 			required: false,
 			digits: true
@@ -127,7 +151,7 @@ $(document).ready(function() {
 	        checkCustomer : true,
 			maxlength: 20
 	    },
-		decription: {
+		  description: {
 			required: true,
 			maxlength: 200
 		},
@@ -165,6 +189,10 @@ $(document).ready(function() {
 	    workDate: {
 	        dateFormat: "Vui lòng nhập Ngày làm việc đúng định dạng"
 	    },
+		 workEndDate : {
+			 checkDateFromTo: "Ngày bắt đầu phải nhỏ hơn Ngày kết thúc",
+			 dateFormat: "Vui lòng nhập Ngày làm việc đúng định dạng"
+		 },
 		age: {
 			required: "Vui lòng nhập Độ tuổi làm việc"
 		},
@@ -194,7 +222,7 @@ $(document).ready(function() {
 	        checkCustomer : "Vui lòng nhập Số điện thoại",
 			maxlength: "Chỉ cho phép nhập Số điện thoại dưới 20 ký tự"
 	    },
-		decription: {
+		 description: {
 			required: "Vui lòng nhập Mô tả cho bài viết",
 			maxlength: "Chỉ cho phép nhập nội dung dưới 200 ký tự"
 		},

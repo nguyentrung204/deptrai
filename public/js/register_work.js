@@ -4,6 +4,11 @@ $( document ).ready(function() {
 			locale: 'vi',
 			format: 'DD/MM/YYYY'
 		});
+
+	$('#datetimepicker1').datetimepicker({
+		locale: 'vi',
+		format: 'DD/MM/YYYY'
+	});
 		
 		$('input[name=registed]').off('click').on('click', function() {
 			if($('input[name=registed]').is(':checked')) {
@@ -17,8 +22,8 @@ $( document ).ready(function() {
 		
 		$('input[name=registed]').trigger('click');
 		
-		$('input[name=salaryType]').off('click').on('click', function() {
-			if($('input[name=salaryType]:checked').val() == 1) {
+		$('input[name=isSalary]').off('click').on('click', function() {
+			if($('input[name=isSalary]:checked').val() == 1) {
 				$(".salaryInput").removeClass('disabled').prop('readonly', false);
 				$("#noneSalary").addClass('disabled').prop('readonly', true);
 			} else {
@@ -62,7 +67,7 @@ $( document ).ready(function() {
 
 						if ($('#registerForm').valid()) {
 							console.log(data);
-							$.ajaxSend("deptrai/admin/job/insert", data, function(result) {
+							$.ajaxSend("../admin/job/insert", data, function(result) {
 								if (result.error) {
 									if (result.data.model != null) {
 										if (result.data.model.type == 'application-error') {

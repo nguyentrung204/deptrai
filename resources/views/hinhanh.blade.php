@@ -58,63 +58,63 @@ $(function () {
 <div data-isotope-layout="fitRows" data-isotope-group="gallery" class="isotope isotope--loaded" >
 <div data-photo-swipe-gallery="gallery" class="row">
 <div data-filter="*" class="col-xs-12 col-sm-6 col-md-4 isotope-item hover01" ><a title="Hình mọi người đang chơi đùa" class="thumbnail-classic"  href="{{ URL::asset('public/img/hinhanh/portfolio-02-1170x600.jpg' ) }}">
-<figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/portfolio-02-1170x600.jpg' ) }}" alt="">
+<figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/GAUA9328.jpg' ) }}" alt="">
 </figure></a>
 </div>
 <div  class="col-xs-12 col-sm-6 col-md-4 isotope-item hover01" ><a title="Hình mọi người đang nói chuyện" class="thumbnail-classic"  href="{{ URL::asset('public/img/hinhanh/portfolio-03-1170x600.jpg' ) }}">
-<figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/portfolio-03-1170x600.jpg' ) }}" alt="">
+<figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/GAUA9360.jpg' ) }}" alt="">
 </figure></a>
 </div>
 <div  class="col-xs-12 col-sm-6 col-md-4 isotope-item hover01" ><a class="thumbnail-classic"  href="{{ URL::asset('public/img/hinhanh/portfolio-04-1170x600.jpg' ) }}">
-<figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/portfolio-04-1170x600.jpg' ) }}" alt="">
+<figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/GAUA9367.jpg' ) }}" alt="">
 </figure></a>
 </div>
 <div  class="col-xs-12 col-sm-6 col-md-4 isotope-item hover01" ><a class="thumbnail-classic"  href="{{ URL::asset('public/img/hinhanh/portfolio-05-1170x600.jpg' ) }}">
-<figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/portfolio-05-1170x600.jpg' ) }}" alt="">
+<figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/GAUA9388.jpg' ) }}" alt="">
 </figure></a>
 </div>
 <div  class="col-xs-12 col-sm-6 col-md-4 isotope-item hover01" ><a class="thumbnail-classic"  href="{{ URL::asset('public/img/hinhanh/portfolio-10-1170x600.jpg' ) }}">
-<figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/portfolio-10-1170x600.jpg' ) }}" alt="">
+<figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/GAUA9398.jpg' ) }}" alt="">
 </figure></a>
 </div>
 <div  class="col-xs-12 col-sm-6 col-md-4 isotope-item hover01" ><a class="thumbnail-classic"  href="{{ URL::asset('public/img/hinhanh/portfolio-15-1170x600.jpg' ) }}">
-<figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/portfolio-15-1170x600.jpg' ) }}" alt="">
+<figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/GAUA9408.jpg' ) }}" alt="">
 </figure></a>
 </div>
 <div  class="col-xs-12 col-sm-6 col-md-4 isotope-item hover01" ><a class="thumbnail-classic"  href="{{ URL::asset('public/img/hinhanh/portfolio-16-1170x600.jpg' ) }}">
-<figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/portfolio-16-1170x600.jpg' ) }}" alt="">
+<figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/GAUA9423.jpg' ) }}" alt="">
 </figure></a>
 </div>
 <div  class="col-xs-12 col-sm-6 col-md-4 isotope-item hover01" ><a class="thumbnail-classic"  href="{{ URL::asset('public/img/hinhanh/portfolio-18-1170x600.jpg' ) }}">
-<figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/portfolio-18-1170x600.jpg' ) }}" alt="">
+<figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/GAUA9458.jpg' ) }}" alt="">
 </figure></a>
 </div>
 <div  class="col-xs-12 col-sm-6 col-md-4 isotope-item hover01" ><a class="thumbnail-classic"  href="{{ URL::asset('public/img/hinhanh/portfolio-20-1170x600.jpg' ) }}">
-<figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/portfolio-20-1170x600.jpg' ) }}" alt="">
+<figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/GAUA9466.jpg' ) }}" alt="">
 </figure></a>
 </div>
 <div  class="col-xs-12 col-sm-6 col-md-4 isotope-item hover01" ><a title="Hình mọi người đang nói chuyện" class="thumbnail-classic"  href="{{ URL::asset('public/img/hinhanh/portfolio-03-1170x600.jpg' ) }}">
-<figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/portfolio-03-1170x600.jpg' ) }}" alt="">
+<figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/GAUA9474.jpg' ) }}" alt="">
 </figure></a>
 </div>
 <div  class="col-xs-12 col-sm-6 col-md-4 isotope-item hover01" ><a class="thumbnail-classic"  href="{{ URL::asset('public/img/hinhanh/portfolio-04-1170x600.jpg' ) }}">
-<figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/portfolio-04-1170x600.jpg' ) }}" alt="">
+<figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/GAUA9477.jpg' ) }}" alt="">
 </figure></a>
 </div>
 <div  class="col-xs-12 col-sm-6 col-md-4 isotope-item hover01" ><a class="thumbnail-classic"  href="{{ URL::asset('public/img/hinhanh/portfolio-05-1170x600.jpg' ) }}">
-<figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/portfolio-05-1170x600.jpg' ) }}" alt="">
+<figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/GAUA9339.jpg' ) }}" alt="">
 </figure></a>
 </div>
 <div  class="col-xs-12 col-sm-6 col-md-4 isotope-item hover01" ><a class="thumbnail-classic"  href="{{ URL::asset('public/img/hinhanh/portfolio-05-1170x600.jpg' ) }}">
-<figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/portfolio-05-1170x600.jpg' ) }}" alt="">
+<figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/GAUA9340.jpg' ) }}" alt="">
 </figure></a>
 </div>
 <div  class="col-xs-12 col-sm-6 col-md-4 isotope-item hover01" ><a class="thumbnail-classic"  href="{{ URL::asset('public/img/hinhanh/portfolio-10-1170x600.jpg' ) }}">
-<figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/portfolio-10-1170x600.jpg' ) }}" alt="">
+<figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/GAUA9341.jpg' ) }}" alt="">
 </figure></a>
 </div>
 <div  class="col-xs-12 col-sm-6 col-md-4 isotope-item hover01" ><a class="thumbnail-classic"  href="{{ URL::asset('public/img/hinhanh/portfolio-15-1170x600.jpg' ) }}">
-<figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/portfolio-15-1170x600.jpg' ) }}" alt="">
+<figure><img width="370"  src="{{ URL::asset('public/img/hinhanh/GAUA9342.jpg' ) }}" alt="">
 </figure></a>
 </div>
 

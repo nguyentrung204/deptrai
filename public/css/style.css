@@ -59,6 +59,10 @@ a:hover , a:active{
 	border-color: #ccc !important;
 }
 
+.navbar-bt li:nth-child(even) a {
+    color: #d73938;
+}
+
 .vcenter {
     display: inline-block;
     vertical-align: middle;
@@ -168,7 +172,7 @@ width: 165px;
   background: #fff;
       padding: 10px 0px;
 	  margin: 0 15px 30px 15px;
-	  height: 207px;
+
 }
 
 #tuyendung .item .img-thumbnail {
@@ -261,6 +265,7 @@ border: none;
 
 #tuyendung .item .description {
 	margin-top: 10px;
+    text-align: justify;
 }
 #tuyendung  #readmore {
 	margin-top: 5px;
@@ -306,7 +311,6 @@ border: none;
 }
 
 .site-header .container {
- padding-left: 46px;
      padding-bottom: 25px;
 }   
 
@@ -326,6 +330,12 @@ border: none;
     border-right: 1px solid #c2cdd1;
 }
 
+.header-job-search-xs .form-control {
+    border-radius: 4px !important;
+    margin-bottom: 5px;
+}
+
+.header-job-search-xs .form-control,
 .header-job-search .form-control {
     border: none;
     padding-left: 60px;
@@ -337,6 +347,15 @@ border: none;
 
 .header-job-search .btn-search, .btn-lienhe {
     width: 20%;
+}
+
+.header-job-search-xs .btn-search .btn {
+    border-radius: 4px;
+    font-size: 16px;
+    text-transform: none;
+    height: 50px;
+    width: 100%;
+    background: #337ab7;
 }
 
 .header-job-search .btn-search .btn, .btn-lienhe .btn {
@@ -359,6 +378,8 @@ border: none;
     border-color: #29aafe!important;
 }
 
+.header-job-search-xs .input-keyword:before,
+.header-job-search-xs .input-location:before,
 .header-job-search .input-keyword:before,
 .header-job-search .input-location:before {
     position: absolute;
@@ -370,7 +391,13 @@ border: none;
     color: #b3c1c6;
     content: "\f002"
 }
+.header-job-search-xs .input-keyword:before,
+.header-job-search-xs .input-location:before {
+    padding-left: 12px;
+}
 
+
+.header-job-search-xs .input-location:before,
 .header-job-search .input-location:before {
     content: "\f041";
 }

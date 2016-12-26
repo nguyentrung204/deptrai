@@ -93,9 +93,7 @@ Route::get('/khachhang', function() {
     return View::make('khachhang', array('menu' => 'khachhang'));
 });
 
-Route::get('/tuyendung', function() {
-    return View::make('tuyendung', array('menu' => 'tuyendung'));
-});
+Route::get('/tuyendung', 'JobController@getList');
 
 Route::get('/hinhanh', function() {
     return View::make('hinhanh',  array('menu' => 'dichvu'));
@@ -134,11 +132,14 @@ Route::group(array("prefix"=>"admin", "before"=>"checkLogin"), function(){
 	
 });
 
-Route::get('/admin_config', 'ConfigController@index');
+Route::get('/admin/config', 'ConfigController@index');
 
-Route::get('/admin_edit/{id}', 'ConfigItemController@index');
+Route::get('/admin/edit/{id}', 'ConfigItemController@index');
 
-Route::post('/admin_edit/{id}' , 'ConfigItemController@save');
+Route::post('/admin/edit/{id}' , 'ConfigItemController@save');
 
 Route::post('/admin/job/insert' , 'JobController@save');
+
+Route::post('/tuyendung/getListAjax' , 'JobController@save');
+
 

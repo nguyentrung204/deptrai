@@ -26,13 +26,13 @@
 			
 			<div class="form-group">
 				<div class="radio  radio-inline">
-				  <input id="isSalary" type="radio" checked value="1" name="salaryType">
+				  <input id="isSalary" type="radio" checked value="1" name="isSalary">
 				  <label for="isSalary">
 					Có ngay mức giá
 				  </label>
 				</div>
 				<div class="radio radio-inline">
-				  <input id="notSalary" type="radio" value="0" name="salaryType">
+				  <input id="notSalary" type="radio" value="0" name="isSalary">
 				  <label for="notSalary">
 					Khác
 				  </label>
@@ -62,10 +62,10 @@
 						<div class="input-group-btn ">
 							<button type="button" class="btn btn-default dropdown-toggle salaryInput" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span id="currencySelected">Chọn Đơn vị tiền tệ</span> <span class="caret"></span></button>
 							<ul class="currency-pull dropdown-menu dropdown-menu-left">
-								<li data=""><a href="javascript:void(0);">VND</a></li>
-								<li data=""><a href="javascript:void(0);">USD</a></li>
-								<li data=""><a href="javascript:void(0);">EURO</a></li>
-								<li data=""><a href="javascript:void(0);">YEN</a></li>
+								<li data="VND"><a href="javascript:void(0);">VND</a></li>
+								<li data="USD"><a href="javascript:void(0);">USD</a></li>
+								<li data="EURO"><a href="javascript:void(0);">EURO</a></li>
+								<li data="YEN"><a href="javascript:void(0);">YEN</a></li>
 								<li role="separator" class="divider"></li>
 								<li data=""><a href="javascript:void(0);">Chọn Đơn vị tiền tệ</a></li>
 							</ul>
@@ -83,16 +83,30 @@
 		  		<label id="addressWork-error" class="error" for="addressWork"></label>
 		    	<input type="text"  id="addressWork" name="addressWork" placeholder="Địa điểm làm việc">
 		  	</div>
-			
+
+			<label id="workDate-error" class="error workDate-error" for="workDate"></label>
+			<label id="workEndDate-error" class="error workEndDate-error" for="workEndDate"></label>
+			<div class="form-inline form-group">
             <div class="form-group">
-	            <label id="workDate-error" class="error workDate-error" for="workDate"></label>
-			  	<div class="input-group date" id="datetimepicker2">
-			    	<input type="text"  id="workDate" name="workDate"  placeholder="Ngày có thể làm việc">
+
+				<div class="input-group date" id="datetimepicker2">
+					<input type="text"  id="workDate" name="workDate"  placeholder="Ngày có thể làm việc">
 			  		<span class="input-group-addon">
 		        		<i class="fa fa-calendar" aria-hidden="true"></i>
 		      		</span>
-			  	</div>
-		  	</div>
+				</div>
+			</div>
+			<div class="form-group">
+
+				<div class="input-group date" id="datetimepicker1">
+					<input type="text"  id="workEndDate" name="workEndDate"  placeholder="Ngày kết thúc công việc">
+			  		<span class="input-group-addon">
+		        		<i class="fa fa-calendar" aria-hidden="true"></i>
+		      		</span>
+				</div>
+			</div>
+				</div>
+
 			
 			<div class="form-group">
 		  		<label id="age-error" class="error" for="age"></label>
@@ -169,9 +183,9 @@
 			    </div>
 			  </div>
 			  <div class="form-group">
-				<label id="decription-error" class="error" for="decription"></label>
+				<label id="description-error" class="error" for="description"></label>
 				<div class="input-group">
-				<input type="text"  id="decription" name="decription"  placeholder="Nhập Mô tả vào đây">
+				<input type="text"  id="description" name="description"  placeholder="Nhập Mô tả vào đây">
                 </div>
 			
 			<div class="form-group">

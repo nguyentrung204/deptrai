@@ -141,5 +141,6 @@ Route::post('/admin/edit/{id}' , 'ConfigItemController@save');
 Route::post('/admin/job/insert' , 'JobController@save');
 
 Route::post('/tuyendung/getListAjax' , 'JobController@save');
+Route::get('/tuyendung/{id}' , 'JobController@view');
 
 

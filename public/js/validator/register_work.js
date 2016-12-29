@@ -121,12 +121,12 @@ $(document).ready(function() {
 			  dateFormat: true
 		  },
 		age: {
-			required: false,
-			digits: true
+			required: false
+			
 		},
 		totalPerson: {
-			required: false,
-			digits: true
+			required: false
+			
 		},
 		path: {
 			required: true
@@ -197,7 +197,7 @@ $(document).ready(function() {
 			required: "Vui lòng nhập Độ tuổi làm việc"
 		},
 		totalPerson: {
-			digits: "Số lượng người phải là số"
+			required: "Vui lòng nhập Số lượng người"
 		},
 		path: {
 			required: "Vui lòng nhập Url hình ảnh cho bài viết"

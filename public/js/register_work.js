@@ -85,7 +85,7 @@ $( document ).ready(function() {
 										});
 									}
 								} else {
-									$.transitionTo('/demo/index', null);
+									$.transitionTo('/tuyendung', null);
 								}
 							}, function() {
 								alert('có lỗi xảy ra.')

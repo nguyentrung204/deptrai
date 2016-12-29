@@ -101,7 +101,12 @@ class JobController extends Controller  {
 	}
 
 	private function search ($offset) {
-		$job = DB::select('SELECT job.*, account.name FROM job LEFT JOIN account ON job.createUser = account.id LIMIT 2 OFFSET ?', [$offset]);
+		$job = DB::select('SELECT job.*, account.name FROM job LEFT JOIN account ON job.createUser = account.id LIMIT 10 OFFSET ?', [$offset]);
 		return $job;
+	}
+	
+	public function view($id){
+		$job = DB::select('SELECT job.*, account.name FROM job LEFT JOIN account ON job.createUser = account.id where job.id=?', [$id]);
+		return view('tuyendung_chitiet', ['job' => $job[0], 'menu' => 'tuyendung']);
 	}
 }

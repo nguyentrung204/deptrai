@@ -72,7 +72,7 @@ $(function () {
 		 <?php for ($x = 0; $x < count($jobList); $x++) { ?>
 		<li class="item col-md-12 clearfix">
 			<div class="col-md-3 col-sm-12 text-center">
-				<img src="<?php echo $jobList[$x]->path ?>" class="img-thumbnail" alt="Cinque Terre" width="100%" >
+				<a href="tuyendung/<?php echo $jobList[$x]->id ?>"><img src="<?php echo $jobList[$x]->path ?>" class="img-thumbnail" alt="Cinque Terre" width="100%" ></a>
 			</div>
 			<div class="col-md-9 col-sm-12 clearfix  ">
 			 <div class="info clearfix hidden-sm hidden-xs">
@@ -100,7 +100,7 @@ $(function () {
 				   ?>
 
 			   </div>
-				<div class="money visible-sm-block visible-xs-block"><i class="fa fa-calendar-check-o " aria-hidden="true"></i> <span class="date">Ngày đăng: <?php echo $jobList[$x]->created_at ?></span></div>
+				<div class="money visible-sm-block visible-xs-block"><i class="fa fa-calendar-check-o " aria-hidden="true"></i> <span class="date">Ngày đăng: <?php $date = new DateTime($jobList[$x]->created_at);echo $date->format('d/m/Y') ?></span></div>
 				<div class="money visible-sm-block visible-xs-block"><i class="fa fa-user-o" aria-hidden="true"></i><span class="user"> Người đăng: <?php echo $jobList[$x]->name ?></span></div>
 			   
 			   

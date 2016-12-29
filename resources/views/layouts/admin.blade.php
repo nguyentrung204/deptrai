@@ -63,8 +63,8 @@
 		<li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">NHÂN SỰ <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">DANH SÁCH</a></li>
-            <li><a href="#">THÊM</a></li>
+            <li><a href="/worker/">DANH SÁCH</a></li>
+            <li><a href="newWorker">THÊM</a></li>
           </ul>
         </li>
 		

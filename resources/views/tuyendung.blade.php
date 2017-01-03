@@ -34,15 +34,15 @@ $(function () {
           <br><br><br>
           <form class="header-job-search hidden-xs">
             <div class="input-keyword">
-              <input type="text" class="form-control" placeholder="Tên việc, lĩnh vực">
+              <input type="text" class="form-control" id="titleTxt" placeholder="Tên việc, lĩnh vực">
             </div>
 
             <div class="input-location">
-              <input type="text" class="form-control" placeholder="Địa điểm, huyện, tỉnh, quận, thành phố">
+              <input type="text" class="form-control" id="addressTxt" placeholder="Địa điểm, huyện, tỉnh, quận, thành phố">
             </div>
 
             <div class="btn-search">
-              <button class="btn" type="submit">Tìm việc</button>
+              <button class="btn" type="button">Tìm việc</button>
             </div>
           </form>
 			<form class="header-job-search-xs visible-xs-block">
@@ -55,7 +55,7 @@ $(function () {
 				</div>
 
 				<div class="col-xs-12 btn-search">
-					<button class="btn" type="submit">Tìm việc</button>
+					<button class="btn" type="button">Tìm việc</button>
 				</div>
 			</form>
         </div>
@@ -67,53 +67,89 @@ $(function () {
 <div id="content2" class="container fill">
 
 
-  
+	<input type="hidden" name="_token" value="{{ csrf_token() }}">
 <div id="tuyendung" style="padding: 10px 20px;">
+
+	<div id="notFound" class="alert alert-danger" style="display:none;    margin-top: 45px;">
+		<strong>Thông báo:</strong> Chúng tôi không tìm thấy việc nào phù hợp với từ khóa bạn đang cần tìm
+	</div>
+
      <ul class="row">
 
-		 <?php for ($x = 0; $x < count($jobList); $x++) { ?>
-		<li class="item col-md-12 clearfix">
+
+		<li class="item col-md-12 clearfix hidden">
 			<div class="col-md-3 col-sm-12 text-center">
-				<a href="tuyendung/<?php echo $jobList[$x]->id ?>"><img src="<?php echo $jobList[$x]->path ?>" class="img-thumbnail" alt="Cinque Terre" width="100%" ></a>
+				<a class="viewDetail" href="tuyendung/"><img src="" class="img-thumbnail" alt="Cinque Terre" width="100%" ></a>
 			</div>
 			<div class="col-md-9 col-sm-12 clearfix  ">
 			 <div class="info clearfix hidden-sm hidden-xs">
 				  <div class="col-md-6">
-				  <i class="fa fa-calendar-check-o " aria-hidden="true"></i> <span class="date">Ngày đăng: <?php $date = new DateTime($jobList[$x]->created_at);echo $date->format('d/m/Y') ?></span>
+				  <i class="fa fa-calendar-check-o " aria-hidden="true"></i> <span class="date">Ngày đăng: <span class="dateVal"></span></span>
 				  </div>
 				  <div class="col-md-6 text-right">
-				  <i class="fa fa-user-o" aria-hidden="true"></i> <span class="user">Người đăng: <?php echo $jobList[$x]->name ?></span>
+				  <i class="fa fa-user-o" aria-hidden="true"></i> <span class="user">Người đăng: <span class="userVal"></span></span>
 				  </div>
 			   </div>
 			
-			   <div class="title"><?php echo $jobList[$x]->title ?></div>
-			   <div class="map"><i class="fa fa-map-marker" aria-hidden="true"></i> <?php echo $jobList[$x]->address ?></div>
+			   <div class="title"></div>
+			   <div class="map"><i class="fa fa-map-marker" aria-hidden="true"></i> <span class="addressVal"></span></div>
 			   <div class="money"><i class="fa fa-usd" aria-hidden="true"></i>
-				   <?php
-				   	if ($jobList[$x]->isSalary != '1') {
-						echo $jobList[$x]->noneSalary;
-					}else {
-						if ($jobList[$x]->salaryTo != 0) {
-				    		echo number_format($jobList[$x]->salaryFrom) . ' ~ ' .  number_format($jobList[$x]->salaryTo) . ' ' .  $jobList[$x]->currency;
-						} else {
-							echo number_format($jobList[$x]->salaryFrom) . ' ' .  $jobList[$x]->currency;
-						}
-					}
-				   ?>
+
+				   <span class="salaryVal">
+
+				   </span>
 
 			   </div>
-				<div class="money visible-sm-block visible-xs-block"><i class="fa fa-calendar-check-o " aria-hidden="true"></i> <span class="date">Ngày đăng: <?php $date = new DateTime($jobList[$x]->created_at);echo $date->format('d/m/Y') ?></span></div>
-				<div class="money visible-sm-block visible-xs-block"><i class="fa fa-user-o" aria-hidden="true"></i><span class="user"> Người đăng: <?php echo $jobList[$x]->name ?></span></div>
+				<div class="money visible-sm-block visible-xs-block"><i class="fa fa-calendar-check-o " aria-hidden="true"></i> <span class="date">Ngày đăng: </span></div>
+				<div class="money visible-sm-block visible-xs-block"><i class="fa fa-user-o" aria-hidden="true"></i><span class="user"> Người đăng: <span class="userVal"></span></span></div>
 			   
 			   
 			   <div class="description">
-				   <?php echo $jobList[$x]->description ?>
+
 			   </div>
 			</div>
 		</li>
-		 <?php } ?>
+
 
 	 </ul>
+	<ul class="hidden">
+
+
+		<li id="example" class="item col-md-12 clearfix hidden">
+			<div class="col-md-3 col-sm-12 text-center">
+				<a class="viewDetail" href="tuyendung/"><img src="" class="img-thumbnail" alt="Cinque Terre" width="100%" ></a>
+			</div>
+			<div class="col-md-9 col-sm-12 clearfix  ">
+				<div class="info clearfix hidden-sm hidden-xs">
+					<div class="col-md-6">
+						<i class="fa fa-calendar-check-o " aria-hidden="true"></i> <span class="date">Ngày đăng: <span class="dateVal"></span></span>
+					</div>
+					<div class="col-md-6 text-right">
+						<i class="fa fa-user-o" aria-hidden="true"></i> <span class="user">Người đăng: <span class="userVal"></span></span>
+					</div>
+				</div>
+
+				<div class="title"></div>
+				<div class="map"><i class="fa fa-map-marker" aria-hidden="true"></i> <span class="addressVal"></span></div>
+				<div class="money"><i class="fa fa-usd" aria-hidden="true"></i>
+
+				   <span class="salaryVal">
+
+				   </span>
+
+				</div>
+				<div class="money visible-sm-block visible-xs-block"><i class="fa fa-calendar-check-o " aria-hidden="true"></i> <span class="date">Ngày đăng: </span></div>
+				<div class="money visible-sm-block visible-xs-block"><i class="fa fa-user-o" aria-hidden="true"></i><span class="user"> Người đăng: <span class="userVal"></span></span></div>
+
+
+				<div class="description">
+
+				</div>
+			</div>
+		</li>
+
+
+	</ul>
 	 <div id="readmore" class="text-center">
 		<button type="button" class="btn btn-default"><i class="fa fa-angle-double-down fa-lg" aria-hidden="true"></i> &nbsp Xem thêm nhiều việc khác nữa ... </button>
 	 </div>

@@ -112,8 +112,8 @@ Route::get('/admin/login', function() {
 
 Route::post('/admin/login', 'UserController@login');
 
-Route::get('/admin/home', array('before'=>'checkLogin',   function() {
-    return View::make('admin_home');
+Route::get('/admin/tuyendung/add', array('before'=>'checkLogin',   function() {
+    return View::make('tuyendung_add');
 }));
 
 /**
@@ -140,7 +140,7 @@ Route::post('/admin/edit/{id}' , 'ConfigItemController@save');
 
 Route::post('/admin/job/insert' , 'JobController@save');
 
-Route::post('/tuyendung/getListAjax' , 'JobController@save');
+Route::post('/tuyendung/getListAjax' , 'JobController@getListAjax');
 Route::get('/tuyendung/{id}' , 'JobController@view');
 
 Route::get('/admin/worker', 'WorkerController@index');

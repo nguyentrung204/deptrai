@@ -14,6 +14,7 @@
 		<link type="text/css" href="{{ URL::asset('public/css/style.css') }}" rel="stylesheet">
 		@yield('css')
 		<script src="{{ URL::asset('public/jquery/jquery-1.11.3.min.js') }}"></script>
+		<script src="{{ URL::asset('public/js/coreRequest.js') }}"></script>
 		<script src="{{ URL::asset('public/bootstrap/js/bootstrap.min.js') }}"></script>
 		<script src="{{ URL::asset('public/js/script.js') }}"></script>
 		<script>
@@ -133,9 +134,11 @@
       <!-- END Bottom section -->
 
     </footer>
-	   
-		
-		
+
+
+			<div class="overlay" style="display:none;">
+				<img id="loading" src="{{ URL::asset('public/img/loading.gif') }}" />
+			</div>
 		
 	</body>
 </html>

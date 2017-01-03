@@ -15,6 +15,7 @@
 		@yield('css')
 		<script src="{{ URL::asset('public/jquery/jquery-1.11.3.min.js') }}"></script>
 		<script src="{{ URL::asset('public/bootstrap/js/bootstrap.min.js') }}"></script>
+		<script src="{{ URL::asset('public/js/coreRequest.js') }}"></script>
 		<script src="{{ URL::asset('public/js/script.js') }}"></script>
 		<script>
 			$( document ).ready(function() {

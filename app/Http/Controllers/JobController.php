@@ -89,24 +89,102 @@ class JobController extends Controller  {
 	}
 	
 	public function getList() {
-		$job = $this->search(0);
-		return view('tuyendung', ['jobList' => $job, 'menu' => 'tuyendung']);
+		return view('tuyendung', ['menu' => 'tuyendung']);
 	}
 
 	public function getListAjax() {
 		$offset  = Input::get('offset');
-		$job = search($offset);
+		$title  = Input::get('titleTxt');
+		$address  = Input::get('addressTxt');
+		$job = $this->search($offset, $title, $address);
 		return response()
-			->json(['jobList' => $job]);
+			->json(['jobList' => $job, 'error' => false, 'total' => $this->all( $title, $address)]);
 	}
 
-	private function search ($offset) {
-		$job = DB::select('SELECT job.*, account.name FROM job LEFT JOIN account ON job.createUser = account.id LIMIT 10 OFFSET ?', [$offset]);
-		return $job;
+	private function search ($offset, $title, $address) {
+		$sql = 'SELECT job.*, account.name FROM job LEFT JOIN account ON job.createUser = account.id';
+		$param =  array();
+		if ($title != '' || $address != '') {
+			$sql.= ' WHERE ';
+
+			if ($title != '') {
+				$sql.= ' job.title like ? ';
+				array_push($param,'%'.$title.'%');
+			}
+
+			if ($title != '' && $address != '') {
+				$sql.= ' AND ';
+			}
+
+			if ($address != '') {
+				$sql.= ' job.address like ? ';
+				array_push($param,'%'. $address .'%');
+			}
+		}
+
+		$sql.= ' LIMIT 2 OFFSET ? ';
+		array_push($param,$offset);
+
+
+
+
+
+
+
+		$jobList = DB::select($sql, $param);
+
+ for ($x = 0; $x < count($jobList); $x++) {
+	 if ($jobList[$x]->isSalary != '1') {
+		 $jobList[$x]->salaryVal = $jobList->noneSalary;
+	 } else {
+		 if ($jobList[$x]->salaryTo != 0) {
+			 $jobList[$x]->salaryVal = number_format($jobList[$x]->salaryFrom) . ' ~ ' . number_format($jobList[$x]->salaryTo) . ' ' . $jobList[$x]->currency;
+
+		 } else {
+			 $jobList[$x]->salaryVal = number_format($jobList[$x]->salaryFrom) . ' ' . $jobList[$x]->currency;
+
+		 }
+	 }
+
+
+
+ }
+
+		return $jobList;
+
+	}
+
+	private function all ( $title, $address) {
+
+
+		$sql = 'SELECT * FROM job';
+		$param =  array();
+		if ($title != '' || $address != '') {
+			$sql.= ' WHERE ';
+
+			if ($title != '') {
+				$sql.= ' job.title like ? ';
+				array_push($param,'%'.$title.'%');
+			}
+
+			if ($title != '' && $address != '') {
+				$sql.= ' AND ';
+			}
+
+			if ($address != '') {
+				$sql.= ' job.address like ? ';
+				array_push($param,'%'. $address .'%');
+			}
+		}
+		$jobList = DB::select($sql, $param);
+		return sizeof($jobList);
 	}
 	
 	public function view($id){
 		$job = DB::select('SELECT job.*, account.name FROM job LEFT JOIN account ON job.createUser = account.id where job.id=?', [$id]);
-		return view('tuyendung_chitiet', ['job' => $job[0], 'menu' => 'tuyendung']);
+		if (sizeof($job) > 0) {
+			return view('tuyendung_chitiet', ['job' => $job[0], 'menu' => 'tuyendung']);
+		}
+
 	}
 }

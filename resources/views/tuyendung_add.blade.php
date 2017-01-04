@@ -117,6 +117,21 @@
 		  		<label id="totalPerson-error" class="error" for="totalPerson"></label>
 		    	<input type="text"  id="totalPerson" name="totalPerson" placeholder="Số lượng người cần tuyển (Vui lòng nhập số, ví dụ: 5 hoặc 5~10)">
 		  	</div>
+
+			<div class="form-group">
+				<div class="radio  radio-inline">
+					<input id="isStatus" type="radio" checked value="1" name="isStatus">
+					<label for="isStatus">
+						Hiển thị
+					</label>
+				</div>
+				<div class="radio radio-inline">
+					<input id="isHide" type="radio" value="0" name="isStatus">
+					<label for="isHide">
+						Ẩn
+					</label>
+				</div>
+			</div>
 			
 			<div class="form-group">
 		  		<label id="path-error" class="error" for="path"></label>

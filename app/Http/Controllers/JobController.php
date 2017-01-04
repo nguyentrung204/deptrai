@@ -69,6 +69,7 @@ class JobController extends Controller  {
 			$profile->age  = Input::get('age');
 			$profile->totalPerson  = Input::get('totalPerson');
 			$profile->path = Input::get('path');
+			$profile->isStatus = Input::get('isStatus');
 
 			$profile->description  = Input::get('description');
 			$profile->content = Input::get('content');
@@ -90,6 +91,12 @@ class JobController extends Controller  {
 	
 	public function getList() {
 		return view('tuyendung', ['menu' => 'tuyendung']);
+	}
+
+	public function getAllJob() {
+		$sql = 'SELECT job.*, account.name FROM job LEFT JOIN account ON job.createUser = account.id';
+		$jobList = DB::select($sql);
+		return view('tuyendung_list', ['tuyendungList' => $jobList]);
 	}
 
 	public function getListAjax() {

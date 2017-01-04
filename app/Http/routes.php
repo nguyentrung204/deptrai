@@ -116,6 +116,8 @@ Route::get('/admin/tuyendung/add', array('before'=>'checkLogin',   function() {
     return View::make('tuyendung_add');
 }));
 
+Route::get('/admin/tuyendung/list', array('before'=>'checkLogin', 'uses' => 'JobController@getAllJob' ));
+
 /**
  * Kiểm Tra đăng nhập 
  */

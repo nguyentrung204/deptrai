@@ -22,7 +22,7 @@ $(function () {
 
 <div style="padding: 2px 3px;">
 <video width="100%"  autoplay="true"> <!-- controls -->
-	  <source src="{{ URL::asset('/public/img/videoplayback.mp4')}}" type="video/mp4">
+	  <source src="{{ URL::asset('/public/img/videoplayback.MP4')}}" type="video/mp4">
 
 	Your browser does not support the video tag.}
 	</video>

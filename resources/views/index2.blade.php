@@ -21,12 +21,12 @@ $(function () {
 
 
 <div style="padding: 2px 3px;">
-  {{--<video width="100%" controls>--}}
-	  {{--<source src="{{ URL::asset('/public/video/videohome.mp4')}}" type="video/mp4">--}}
-	  {{----}}
-	{{--Your browser does not support the video tag.--}}
-	{{--</video>--}}
-	<img width="100%" src="{{ URL::asset('/public/img/Exodus2.jpg')}}">
+<video width="100%"  autoplay="true"> <!-- controls -->
+	  <source src="{{ URL::asset('/public/img/videoplayback.mp4')}}" type="video/mp4">
+
+	Your browser does not support the video tag.}
+	</video>
+
 	
   </div>  
   

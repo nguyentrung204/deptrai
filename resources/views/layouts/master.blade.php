@@ -44,18 +44,18 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a id="sayhi" class="navbar-brand" href="#"><img id="logo" src="{{ URL::asset('public/img/unnamed.png') }} "/></a>
+				<a id="sayhi" class="navbar-brand" href="/"><img id="logo" src="{{ URL::asset('public/img/unnamed.png') }} "/></a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse navbar-bt" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
-					<li menu="trangchu"><a href="/deptrai">TRANG CHỦ<span class="sr-only">(current)</span></a></li>
-					<li menu="gioithieu"><a href="/deptrai/gioithieu">GIỚI THIỆU</a></li>
-					<li menu="dichvu"><a href="/deptrai/hinhanh">DỊCH VỤ</a></li>
-					<li menu="khachhang"><a href="/deptrai/khachhang">KHÁCH HÀNG</a></li>
-					<li menu="tuyendung"><a href="/deptrai/tuyendung">TUYỂN DỤNG</a></li>
-					<li menu="lienhe"><a href="/deptrai/lienhe">LIÊN HỆ</a></li>
+					<li menu="trangchu"><a href="/">TRANG CHỦ<span class="sr-only">(current)</span></a></li>
+					<li menu="gioithieu"><a href="gioithieu">GIỚI THIỆU</a></li>
+					<li menu="dichvu"><a href="hinhanh">DỊCH VỤ</a></li>
+					<li menu="khachhang"><a href="khachhang">KHÁCH HÀNG</a></li>
+					<li menu="tuyendung"><a href="tuyendung">TUYỂN DỤNG</a></li>
+					<li menu="lienhe"><a href="lienhe">LIÊN HỆ</a></li>
 
 
 				</ul>

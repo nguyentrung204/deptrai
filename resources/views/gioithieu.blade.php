@@ -1,6 +1,6 @@
 @extends('layouts.master2')
 
-@section('title', trans('login.title'))
+@section('title', 'Giới thiệu')
 
 @section('content')
 @section('css')
@@ -31,25 +31,23 @@
     <div class="row" id="about_detail">
         <div class="detail-label-1"><label><h3>Giới thiệu</h3></label></div>
         <div class="detail-param">
-            Được thành lập từ năm 1995, là một trong những công ty chuyên cung cấp dịch vụ vệ sinh công nghiệp đầu tiên tại Việt Nam.
-            UniCARE luôn tiên phong trong việc ứng dụng các công nghệ, giải pháp mới nhất đến từ Nhật Bản trong lĩnh vực vệ sinh công nghiệp.
-            Năm 2008, UniCARE đã hoàn thành tiêu chuẩn ISO 9001:2000 do tổ chức TUV xác nhận cho việc cung cấp dịch vụ uy tín, chất lượng và chuyên nghiệp.
-            Ngoài ra, để tiếp tục nhấn mạnh cho triết lý kinh doanh “Uy Tín và Chuyên Nghiệp”, tập trung vào sự phát triển của các dịch vụ đặc biệt cho khách hàng,
-            UniCARE đã hoàn thành việc chuyển đổi và áp dụng hệ thống chất lượng theo tiêu chuẩn ISO.
+            Nhu cầu dịch vụ gia tăng trong quá trình đô thị hóa
+            Vốn đầu tư trong khả năng kiểm soát
+            Huy động đội ngũ lao động từ nông thôn, đặc biệt là những phụ nữ trẻ không có trình độ học vấn và tay nghề
+            Quy trình đào tạo đơn giản, thích ứng nhanh, vận hành hiệu quả
+            Mô hình kinh doanh đơn giản, khả thi, đầy tiềm năng mở rộng và phát triển
         </div>
         <div class="detail-label-2"><label style="margin: 0"><h3 style="margin: 0"> <i class="fa fa-envira" aria-hidden="true"></i> &nbsp Sứ mệnh</h3></label></div>
         <div class="detail-param">
-            Công ty dịch vụ vệ sinh UniCARE liên tục duy trì sự sáng tạo và phấn đấu cung cấp dịch vụ chất lượng cao với chi phí hợp lý.
-            Đem lại lợi ích cả về vật chất lẫn tinh thần không những cho người lao động mà còn cả khách hàng và toàn xã hội.
+            -	Giúp người nghèo và cơ nhỡ sinh tồn
+            -	 Xây dựng môi trường sống lành mạnh
+            -	Đào tạo con người nhân ái
         </div>
         <div class="detail-label-2"><label style="margin: 0"><h3 style="margin: 0"><i class="fa fa-envira" aria-hidden="true"></i> &nbsp Tầm nhìn</h3></label></div>
         <div class="detail-param">
-            Trở thành một tập đoàn hàng đầu tại Việt Nam cũng như trong khu vực trong lĩnh vực dịch vụ vệ sinh,
-            đồng thời tạo ra một quan điểm phát triển bền vững.
-            <br>
-            Tăng cường đầu tư, nghiên cứu và không ngừng nâng cao cải tiến chất lượng dịch vụ làm sạch công nghiệp,
-            đảm bảo nhu cầu khách hàng luôn được đáp ứng nhanh nhất, chu đáo nhất, hiệu quả nhất với chi phí hợp lý nhất.
-
+            -	Triển khai mô hình kinh doanh Không -Vì - Lợi - Nhuận cho cộng đồng
+            -	Cung ứng việc làm cho người nghèo và cơ nhỡ
+            -	Phát huy môi trường lao động thăng tiến công bình và nhân bản
         </div>
         <div class="detail-label-2"><label style="margin: 0"><h3 style="margin: 0"><i class="fa fa-building-o" aria-hidden="true"></i> &nbsp Dịch vụ vệ sinh hằng ngày</h3></label></div>
         <div class="detail-param">

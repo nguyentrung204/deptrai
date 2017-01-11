@@ -18,6 +18,7 @@ $( document ).ready(function() {
 		'click',
 		function() {
 			isSearchClick = true;
+			$('#tuyendung .row').html('');
 			search();
 
 		});
@@ -58,7 +59,7 @@ function search() {
 
 			}
 		} else {
-			$('#tuyendung .row').html('');
+
 			if (result.jobList.length > 0) {
 				$('#notFound').hide();
 				searchCondition = data;
@@ -80,7 +81,7 @@ function search() {
 					li.find('.addressVal').text(result.jobList[i].address);
 					li.find('.userVal').text(result.jobList[i].name);
 					li.find('.title').text(result.jobList[i].title);
-					li.find('.viewDetail').prop("href" + result.jobList[i].id);
+					li.find('.viewDetail').prop("href", 'tuyendung/' + result.jobList[i].id);
 					li.find('.salaryVal').text(result.jobList[i].salaryVal);
 					li.find('.description').text(result.jobList[i].description);
 

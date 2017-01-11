@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', trans('login.title'))
+@section('title', 'Trang chủ')
 
 @section('content')
 

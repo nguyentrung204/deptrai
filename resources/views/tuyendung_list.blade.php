@@ -25,7 +25,9 @@
 				<td><?php echo $tuyendungList[$x]->title ?></td>
 				<td><?php echo $tuyendungList[$x]->name ?></td>
 				<td><?php if( $tuyendungList[$x]->isStatus == '0') { echo 'Ẩn'; } else { echo 'Hoạt động';} ?></td>
-			</t
+				<td><a href="javascript:void(0);" style="color: lawngreen !important; cursor: pointer;"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a></td>
+				<td><a href="javascript:void(0);" style="color: red !important; cursor: pointer;"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a></td>
+			</tr>
 			<?php } ?>
 
 			</tbody>

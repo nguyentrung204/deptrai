@@ -1,6 +1,6 @@
 @extends('layouts.master2')
 
-@section('title', trans('login.title'))
+@section('title', 'Tuyển dụng')
 
 @section('content')
 
@@ -77,38 +77,6 @@ $(function () {
      <ul class="row">
 
 
-		<li class="item col-md-12 clearfix hidden">
-			<div class="col-md-3 col-sm-12 text-center">
-				<a class="viewDetail" href="tuyendung/"><img src="" class="img-thumbnail" alt="Cinque Terre" width="100%" ></a>
-			</div>
-			<div class="col-md-9 col-sm-12 clearfix  ">
-			 <div class="info clearfix hidden-sm hidden-xs">
-				  <div class="col-md-6">
-				  <i class="fa fa-calendar-check-o " aria-hidden="true"></i> <span class="date">Ngày đăng: <span class="dateVal"></span></span>
-				  </div>
-				  <div class="col-md-6 text-right">
-				  <i class="fa fa-user-o" aria-hidden="true"></i> <span class="user">Người đăng: <span class="userVal"></span></span>
-				  </div>
-			   </div>
-			
-			   <div class="title"></div>
-			   <div class="map"><i class="fa fa-map-marker" aria-hidden="true"></i> <span class="addressVal"></span></div>
-			   <div class="money"><i class="fa fa-usd" aria-hidden="true"></i>
-
-				   <span class="salaryVal">
-
-				   </span>
-
-			   </div>
-				<div class="money visible-sm-block visible-xs-block"><i class="fa fa-calendar-check-o " aria-hidden="true"></i> <span class="date">Ngày đăng: </span></div>
-				<div class="money visible-sm-block visible-xs-block"><i class="fa fa-user-o" aria-hidden="true"></i><span class="user"> Người đăng: <span class="userVal"></span></span></div>
-			   
-			   
-			   <div class="description">
-
-			   </div>
-			</div>
-		</li>
 
 
 	 </ul>

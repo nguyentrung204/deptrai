@@ -7,12 +7,14 @@
 
 @section('js')
 
-	<script src="{{ URL::asset('public/js/tuyendung.js') }}"></script>
+
 
 <script>
 
 $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
+  $('#tuyendungbtn').off('click').on('click', function(){
+	  window.location = "../tuyendung";
+  });
 })
 
 </script>
@@ -72,7 +74,7 @@ $(function () {
 		
 		
 		 <div class="user text-center">
-			<button type="button" class="btn btn-default"><i class="fa fa-angle-double-left" aria-hidden="true"></i> &nbsp Trang tuyển dụng</button>
+			<button id="tuyendungbtn" type="button" class="btn btn-default"><i class="fa fa-angle-double-left" aria-hidden="true"></i> &nbsp Trang tuyển dụng</button>
 		 </div>
 		 
 		

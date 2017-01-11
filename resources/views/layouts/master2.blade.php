@@ -76,12 +76,11 @@
           <div class="col-sm-12 col-md-6">
             <h6>LIÊN HỆ</h6>
 			<div style="padding-left: 15px;margin: 10px 0px;">
-			<i class="fa fa-map-marker fa-lg" aria-hidden="true"></i> &nbsp Trụ sở chính : 6 Bis Tôn Đức Thắng, P. Bến Nghé, Q. 1, Tp. HCM
+			<i class="fa fa-map-marker fa-lg" aria-hidden="true"></i> &nbsp Trụ sở chính : 6Bis Tôn Đưc Thắng, P.Bến Nghé,Q.1, TP.HCM
 			<br/>
-			<i class="fa fa-phone fa-lg" aria-hidden="true"></i> &nbsp Điện thoại hỗ trợ : +84 (0) 909 973 818  - (08) 6680 9449
+			<i class="fa fa-phone fa-lg" aria-hidden="true"></i> &nbsp Điện thoại hỗ trợ : +84 (0) 909 973 818  - (08) 3911 1976
 			<br/>
 			</div>
-            <p class="text-justify">An employment website is a web site that deals specifically with employment or careers. Many employment websites are designed to allow.</p>
           </div>
 
           <div class="col-xs-6 col-md-3">
@@ -97,13 +96,13 @@
 
           <div class="col-xs-6 col-md-3">
             <h6>DỊCH VỤ</h6>
-            <ul class="footer-links">
-              <li><a href="job-list.html">Nhân lực Vệ sinh</a></li>
-              <li><a href="job-list.html">Nhân lực Điện tử</a></li>
-              <li><a href="job-list.html">Nhân lực Xây dựng</a></li>
-              <li><a href="job-list.html">Nhân lực Giáo dục</a></li>
-              <li><a href="job-list.html">Nhân lực Buôn bán</a></li>
-            </ul>
+			  <ul class="footer-links">
+				  <li><a href="job-list.html">Dịch vụ vệ sinh, dọn dẹp cao ốc văn phòngvà nhà ở</a></li>
+				  <li><a href="job-list.html">Dịch vụ sửa chữa thiết bị điện</a></li>
+				  <li><a href="job-list.html">Dịch vụ hỗ trợ giáo dục</a></li>
+				  <li><a href="job-list.html">Dịch vụ tư vấn ngành nghề, giới thiệu lao động</a></li>
+				  <li><a href="job-list.html">Dịch vụ tư vấn quảng cáo</a></li>
+			  </ul>
           </div>
         </div>
 
